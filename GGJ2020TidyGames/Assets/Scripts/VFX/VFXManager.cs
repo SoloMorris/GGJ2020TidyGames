@@ -26,7 +26,16 @@ public class VFXManager : MonoBehaviour
             instance = this;
         }
     }
-
+    private void Update()
+    {
+        foreach (VFX item in vfxList)
+        {
+            if (item.effect.isPlaying && item.target != item.instance)
+            {
+                StopParticleSystem(item.name, item.target);
+            }
+        }
+    }
     //Use this in Start to add a particle system to the pool.
     public void AddParticleSystemToVFXList(ParticleSystem _effect, string _name)
     {
