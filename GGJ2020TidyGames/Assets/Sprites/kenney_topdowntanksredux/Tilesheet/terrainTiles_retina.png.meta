@@ -151,7 +151,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -196,6 +196,7 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+<<<<<<< HEAD
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -268,6 +269,8 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+=======
+>>>>>>> SparkMovement
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -286,13 +289,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 4d5202e24ee00a84b93c8b55a3d509f2
+=======
+      spriteID: 88139aebcaadaf34a81a0b03834bee0d
+>>>>>>> SparkMovement
       internalID: 1749174745336897129
       vertices: []
       indices: 
@@ -307,13 +318,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 41683e869c318da4d8853296fecc7538
+=======
+      spriteID: e09a616a93e46b642ba27a5dfa051839
+>>>>>>> SparkMovement
       internalID: 8251337652403941832
       vertices: []
       indices: 
@@ -328,13 +347,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 41f4621405ec96b4295d5469f5b24fa2
+=======
+      spriteID: 02c6ca2eaeaa58e47801e7607704caa7
+>>>>>>> SparkMovement
       internalID: -151610012292578264
       vertices: []
       indices: 
@@ -349,13 +376,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: b4c330f7bb660e444a2ad0d2d947d4f8
+=======
+      spriteID: 7dd8c144762beff4c8f70dfc7f10c5bd
+>>>>>>> SparkMovement
       internalID: -1148159345555663894
       vertices: []
       indices: 
@@ -370,13 +405,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 4ec9e8dd2bdf576478d2a03454caace5
+=======
+      spriteID: 2c229998231264f45b21440a59940ac5
+>>>>>>> SparkMovement
       internalID: 8776712740982946709
       vertices: []
       indices: 
@@ -391,13 +434,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: f71129db313149c49877a24a3f136409
+=======
+      spriteID: 7cf44923651693348987686cd5ec1a5f
+>>>>>>> SparkMovement
       internalID: 2843258905518380185
       vertices: []
       indices: 
@@ -412,13 +463,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 816d6a3a219858c40ba1daed69b2ce67
+=======
+      spriteID: 617051f17bc1dc042af92dfac230d3f0
+>>>>>>> SparkMovement
       internalID: 8906014164344500070
       vertices: []
       indices: 
@@ -433,13 +492,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 15fb3ab948d9037439b5e01ef7228158
+=======
+      spriteID: a7932f0bb364f2747bcb065a8ac74fd0
+>>>>>>> SparkMovement
       internalID: -4604534751325105578
       vertices: []
       indices: 
@@ -454,13 +521,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: fa6a079056a401b45a32dcb5b211c6d8
+=======
+      spriteID: 8244e6010bfd1de4f96b22abf05a2a89
+>>>>>>> SparkMovement
       internalID: -857802322467348652
       vertices: []
       indices: 
@@ -475,13 +550,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: b2730487955afbf4b87aaaabf6a6f6b1
+=======
+      spriteID: bb1f821844679db47af2c4a21568f154
+>>>>>>> SparkMovement
       internalID: -8967364499366257759
       vertices: []
       indices: 
@@ -496,13 +579,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: fab54742be4cd264d8f4f63804e3d687
+=======
+      spriteID: 64a7a6702764a1849b2f03216d75c7cb
+>>>>>>> SparkMovement
       internalID: 5427771818502946456
       vertices: []
       indices: 
@@ -517,13 +608,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: a992c282e81583c42891b07c2805f923
+=======
+      spriteID: c6f00bfab4c282d4cb5ff39b661686c9
+>>>>>>> SparkMovement
       internalID: 3691445118664598167
       vertices: []
       indices: 
@@ -538,13 +637,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 5785378baea18ba4b8248378c8714657
+=======
+      spriteID: 1f773747ddb846f47a7b77955cdb7a21
+>>>>>>> SparkMovement
       internalID: -87009230335412884
       vertices: []
       indices: 
@@ -559,13 +666,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 4e608bef676813745b53a1a6f5eb0e59
+=======
+      spriteID: e77e56658cc67f14cbb5c028ba9bb5dc
+>>>>>>> SparkMovement
       internalID: -3499699641190699804
       vertices: []
       indices: 
@@ -580,13 +695,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: fe1174ffe2ce7e54b8e6cbe184990a33
+=======
+      spriteID: 4ad7421410128b9428ae013285591734
+>>>>>>> SparkMovement
       internalID: 7205762377846577219
       vertices: []
       indices: 
@@ -601,13 +724,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 2480a89a8a9fabc4a99591fe0f41948d
+=======
+      spriteID: cb6f93a41e755bd4281fc76b4cc40948
+>>>>>>> SparkMovement
       internalID: 2818056647922590426
       vertices: []
       indices: 
@@ -622,13 +753,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 26a398b67a0b23d4190e7fb612210ee4
+=======
+      spriteID: 386e44cc70c005949aa67df7ccd092fb
+>>>>>>> SparkMovement
       internalID: 6129870139394428241
       vertices: []
       indices: 
@@ -643,13 +782,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 21b731c1962575145a77bee4cd75a5b5
+=======
+      spriteID: f52b8d56f7b72f64db6d90aece26a166
+>>>>>>> SparkMovement
       internalID: -6950046499012737772
       vertices: []
       indices: 
@@ -664,13 +811,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: b55775a4e4ea84c449a4383073697092
+=======
+      spriteID: 6818ad0467fb14648b4eebd14d5aa338
+>>>>>>> SparkMovement
       internalID: -7900677344850382801
       vertices: []
       indices: 
@@ -685,13 +840,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 38ba2da0678dc814ab9eb23aff9345c1
+=======
+      spriteID: a5fc29cba13e3ed4990579c3432a8345
+>>>>>>> SparkMovement
       internalID: -4463688086120135116
       vertices: []
       indices: 
@@ -706,13 +869,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 2cc8ffceb94843f4bb46f6a1cdb0988c
+=======
+      spriteID: e7e770106034e0446b8615fbceea99aa
+>>>>>>> SparkMovement
       internalID: -4977573980305812042
       vertices: []
       indices: 
@@ -727,13 +898,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 9f4c117d59d661a4eb32095ea2b14f63
+=======
+      spriteID: 7e991e49f05ecc444a1792c5210608ec
+>>>>>>> SparkMovement
       internalID: -6881018400824774517
       vertices: []
       indices: 
@@ -748,13 +927,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 89fbfcb8ceb3c1d409e6d6e55d8f9194
+=======
+      spriteID: ee65c2e5a71d6e3469c5ef31f4d722ea
+>>>>>>> SparkMovement
       internalID: 5068802320365586382
       vertices: []
       indices: 
@@ -769,13 +956,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 1b40ccd6f0abe7547a7477fb0f44fa2b
+=======
+      spriteID: 0a80ed0d973314e45875a6875911384c
+>>>>>>> SparkMovement
       internalID: -6789522486642777299
       vertices: []
       indices: 
@@ -790,13 +985,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: e4be2c233b6d1124eacc93f251db59cd
+=======
+      spriteID: 91593c4c39301714ba816ef583ee66d7
+>>>>>>> SparkMovement
       internalID: 2206419702539262108
       vertices: []
       indices: 
@@ -811,13 +1014,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 6751ccd35de86b94c86180761c4f5069
+=======
+      spriteID: 8ced7597676fe6b40b1d2e1bd062efdb
+>>>>>>> SparkMovement
       internalID: 136517765729345419
       vertices: []
       indices: 
@@ -832,13 +1043,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 48c1216022fe8bc4d8bc8feaa13adcbb
+=======
+      spriteID: 26309aacd51435f48a2456476349705c
+>>>>>>> SparkMovement
       internalID: -2986453520047116060
       vertices: []
       indices: 
@@ -853,13 +1072,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 4e6e86e1a2672b44b9f703894e8a57b8
+=======
+      spriteID: eeb426ae590d7d44fa7a2f560283d629
+>>>>>>> SparkMovement
       internalID: -1330490732805590500
       vertices: []
       indices: 
@@ -874,13 +1101,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 729ee8dd204a223418f23e7f7a197fba
+=======
+      spriteID: a331b8923e2dd534d802c9864c2d3802
+>>>>>>> SparkMovement
       internalID: 751287095422310894
       vertices: []
       indices: 
@@ -895,13 +1130,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: d4f4789224a8c204e9df8f3bffd0e54a
+=======
+      spriteID: 5594a70dcae670d439df1dc9cab5746d
+>>>>>>> SparkMovement
       internalID: 307005897450038251
       vertices: []
       indices: 
@@ -916,13 +1159,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 1b5aeeb90ee4bee46b254971685fe5c8
+=======
+      spriteID: 02c49ffd87cf11341a4b09eda715331f
+>>>>>>> SparkMovement
       internalID: 604084348934996914
       vertices: []
       indices: 
@@ -937,13 +1188,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: c8e5d7920449f6a499d48eb1f6dc1e83
+=======
+      spriteID: fe0c5e25fb7360f40a9ba0aa86d411ad
+>>>>>>> SparkMovement
       internalID: 8161045040459462648
       vertices: []
       indices: 
@@ -958,13 +1217,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: e2f0b91c38bfe744eb961df7045d245e
+=======
+      spriteID: c33a87f0bb071804fb2a2963179e2a37
+>>>>>>> SparkMovement
       internalID: 1108768131420026674
       vertices: []
       indices: 
@@ -979,13 +1246,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 090f2d8ae1006d94e8a02a55259ce08d
+=======
+      spriteID: cb082fa522d0acc4bb819e9ed131859a
+>>>>>>> SparkMovement
       internalID: -8854047122535222741
       vertices: []
       indices: 
@@ -1000,13 +1275,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 6cc5bcc4c46760c40a18ee064d3c644b
+=======
+      spriteID: 8b0d2f3c343476842a343bfc0953ff28
+>>>>>>> SparkMovement
       internalID: 354756130720861726
       vertices: []
       indices: 
@@ -1021,13 +1304,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: da46055f66799a548a3520f9f2794103
+=======
+      spriteID: 094666d89949b3a49b53dc99f6b68da3
+>>>>>>> SparkMovement
       internalID: -691683705106270708
       vertices: []
       indices: 
@@ -1042,13 +1333,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: c7d05c82a1e8ed44986a938af9820a58
+=======
+      spriteID: 5cb4bd4f66cb2df4b997aae6c5974d78
+>>>>>>> SparkMovement
       internalID: 4678613153043393672
       vertices: []
       indices: 
@@ -1063,13 +1362,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 27472eb4ea4791f4698869e2877162c7
+=======
+      spriteID: eee298cc38d922148b8dd0417a4f824d
+>>>>>>> SparkMovement
       internalID: -762265136769857235
       vertices: []
       indices: 
@@ -1084,13 +1391,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 5281bb93a4642a442b4b72b4e8d88109
+=======
+      spriteID: c0228fdfd89b0b74ab8533a61b75e1f1
+>>>>>>> SparkMovement
       internalID: 6918685767824037207
       vertices: []
       indices: 
@@ -1105,13 +1420,21 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> SparkMovement
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: db334fd423772b240a70adafc1d535e5
+=======
+      spriteID: 19f7f29780c992049b3cab0f7b41dc35
+>>>>>>> SparkMovement
       internalID: 3439765755860441036
       vertices: []
       indices: 
@@ -1120,7 +1443,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 2359c1b8cd69c1d409b5e2ec51081f3c
+=======
+    spriteID: 5e97eb03825dee720800000000000000
+>>>>>>> SparkMovement
     internalID: 0
     vertices: []
     indices: 
