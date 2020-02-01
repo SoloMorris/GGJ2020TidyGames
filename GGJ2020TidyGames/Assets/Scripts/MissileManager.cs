@@ -18,7 +18,12 @@ public class MissileManager : MonoBehaviour
     private List<GameObject> redMissiles = new List<GameObject>();
     private List<GameObject> blueMissiles = new List<GameObject>();
     public int maxMissiles;
-    [SerializeField] private float missileSpeed;
+    
+    [SerializeField]
+    [Range (0.0f,10f)]
+    private float missileSpeed;
+
+    [SerializeField] private ParticleSystem firePuff;
 
     private void Awake()
     {
@@ -37,8 +42,10 @@ public class MissileManager : MonoBehaviour
             //blueMissiles.Add(Instantiate(blueMissile, transform));
             //blueMissiles[i].SetActive(false);
 
+            VFXManager.instance.AddParticleSystemToVFXList(firePuff, "bulletLaunch", 2);
             Debug.Log("1");
         }
+
     }
 
     public bool FireMissile(string colour)
@@ -53,8 +60,9 @@ public class MissileManager : MonoBehaviour
                     _missile.transform.rotation = redTankBarrel.rotation;
                     _missile.transform.position = redSpawner.position;
                     _missile.GetComponent<MissileController>().target = "blue";
-                    _missile.GetComponent<MissileController>().direction = -redTankBarrel.up;
+                    _missile.GetComponent<MissileController>().direction = redTankBarrel.up;
                     _missile.SetActive(true);
+                    VFXManager.instance.PlayParticleSystemFromVFXList(redSpawner.gameObject, "bulletLaunch");
                     return true;
                 }
             }

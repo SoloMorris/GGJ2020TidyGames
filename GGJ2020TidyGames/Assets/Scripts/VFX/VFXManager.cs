@@ -16,7 +16,7 @@ public class VFXManager : MonoBehaviour
         public string name;
         public ParticleSystem effect;
         public GameObject instance;
-        public Transform target;
+        public GameObject target;
     }
 
     private void Awake()
@@ -35,16 +35,33 @@ public class VFXManager : MonoBehaviour
         newEffect.name = _name;
         newEffect.effect = Instantiate(_effect, transform);
         newEffect.instance = _effect.gameObject;
-        newEffect.target = newEffect.instance.transform;
+        newEffect.target = newEffect.instance;
         newEffect.effect.Stop();
         newEffect.instance.SetActive(false);
 
         vfxList.Add(newEffect);
-        Debug.Log("Particle system " + newEffect.name +" added!");
+        Debug.Log("Particle system " + vfxList[vfxList.Count-1].name +" added!");
     }
 
+    public void AddParticleSystemToVFXList(ParticleSystem _effect, string _name, int amount)
+    {
+        for (int i = 0; i < (amount - 1); i++)
+        {
+            VFX newEffect = new VFX();
+
+            newEffect.name = _name;
+            newEffect.effect = Instantiate(_effect, transform);
+            newEffect.instance = _effect.gameObject;
+            newEffect.target = newEffect.instance;
+            newEffect.effect.Stop();
+            newEffect.instance.SetActive(false);
+
+            vfxList.Add(newEffect);
+            Debug.Log("Particle system " + vfxList[vfxList.Count - 1].name + " added!");
+        }
+    }
     //Finds an inactive effect by name and attaches it to given target transform.
-    public bool PlayParticleSystemFromVFXList(Transform _target, string _vfxName)
+    public bool PlayParticleSystemFromVFXList(GameObject _target, string _vfxName)
     {
         foreach (VFX _vfx in vfxList)
         {
@@ -52,7 +69,7 @@ public class VFXManager : MonoBehaviour
             {
                 if (_vfx.target == _target)
                 {
-                    _vfx.instance.transform.position = _target.position;
+                    _vfx.instance.transform.position = _target.transform.position;
                     if (!_vfx.effect.isPlaying)
                     {
                         StopParticleSystem(_vfx.name, _target);
@@ -61,10 +78,10 @@ public class VFXManager : MonoBehaviour
                 }
 
                 //Checks if the vfx's target is itself -- i.e it's not used anywhere else
-                if (_vfx.target == _vfx.instance.transform)
+                if (_vfx.target == _vfx.instance)
                 {
                     _vfx.target = _target;
-                    _vfx.instance.transform.position = _vfx.target.position;
+                    _vfx.instance.transform.position = _target.transform.position;
                     _vfx.instance.SetActive(true);
                     _vfx.effect.Play();
                     return true;
@@ -73,9 +90,11 @@ public class VFXManager : MonoBehaviour
         }
         return false;
     }
+
+
 
     //Overload for Vector3 offset
-    public bool PlayParticleSystemFromVFXList(Transform _target, string _vfxName, Vector3 _offset)
+    public bool PlayParticleSystemFromVFXList(GameObject _target, string _vfxName, Vector3 _offset)
     {
         foreach (VFX _vfx in vfxList)
         {
@@ -83,7 +102,7 @@ public class VFXManager : MonoBehaviour
             {
                 if (_vfx.target == _target)
                 {
-                    _vfx.instance.transform.position = _target.position + _offset;
+                    _vfx.instance.transform.position = _target.transform.position + _offset;
                     if (!_vfx.effect.isPlaying)
                     {
                         StopParticleSystem(_vfx.name, _target);
@@ -92,10 +111,10 @@ public class VFXManager : MonoBehaviour
                 }
 
                 //Checks if the vfx's target is itself -- i.e it's not used anywhere else
-                if (_vfx.target == _vfx.instance.transform)
+                if (_vfx.target == _vfx.instance)
                 {
                     _vfx.target = _target;
-                    _vfx.instance.transform.position = _vfx.target.position + _offset;
+                    _vfx.instance.transform.position = _vfx.target.transform.position + _offset;
                     _vfx.instance.SetActive(true);
                     _vfx.effect.Play();
                     return true;
@@ -105,7 +124,7 @@ public class VFXManager : MonoBehaviour
         return false;
     }
 
-    public void StopParticleSystem(string _name, Transform _target)
+    public void StopParticleSystem(string _name, GameObject _target)
     {
         foreach (VFX _vfx in vfxList)
         {
@@ -114,7 +133,7 @@ public class VFXManager : MonoBehaviour
                 if (_vfx.target == _target)
                 {
                     _vfx.effect.Stop();
-                    _vfx.target = _vfx.instance.transform;
+                    _vfx.target = _vfx.instance;
                     _vfx.instance.transform.position = Vector3.zero;
                     _vfx.instance.SetActive(false);
                 }
