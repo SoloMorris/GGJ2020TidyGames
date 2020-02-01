@@ -344,6 +344,7 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1383410945051905648, guid: bebfcb14fec2487419a1c03373f7f795,
         type: 3}
       propertyPath: m_SortingOrder
@@ -359,6 +360,8 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 11
       objectReference: {fileID: 0}
+=======
+>>>>>>> PlayerMovement
     - target: {fileID: 1383410945949595822, guid: bebfcb14fec2487419a1c03373f7f795,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2502,6 +2505,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TileSpriteArray.Array.data[3].m_RefCount
       value: 0
+<<<<<<< HEAD
       objectReference: {fileID: 0}
     - target: {fileID: 7514836449205190265, guid: dd029f888bc5c4b48b5c64a025eb976c,
         type: 3}
@@ -2515,6 +2519,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7514836449205190265, guid: dd029f888bc5c4b48b5c64a025eb976c,
         type: 3}
+=======
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514836449205190265, guid: dd029f888bc5c4b48b5c64a025eb976c,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[3].m_Data
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514836449205190265, guid: dd029f888bc5c4b48b5c64a025eb976c,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[7].m_RefCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514836449205190265, guid: dd029f888bc5c4b48b5c64a025eb976c,
+        type: 3}
+>>>>>>> PlayerMovement
       propertyPath: m_TileSpriteArray.Array.data[7].m_Data
       value: 
       objectReference: {fileID: -1668014440229517187, guid: 629f0f198bb7d194e8bf18c48a515628,
