@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{bdecc8c1-236c-4630-86e7-b6380bcfdd01}">
+        <property name="name">
+            <value>Accel</value>
+        </property>
+        <relationship name="folder">
+            <destination>{b678888d-0ce9-43e0-879d-5ed95502f838}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{bfd9a30e-ecd3-4540-aa34-c2def93aad40}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{bfd9a30e-ecd3-4540-aa34-c2def93aad40}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+        <property name="isExposedRecursively">
+            <value>false</value>
+        </property>
+    </object>
+</objects>
