@@ -53,7 +53,7 @@ public class MissileManager : MonoBehaviour
                     _missile.transform.rotation = redTankBarrel.rotation;
                     _missile.transform.position = redSpawner.position;
                     _missile.GetComponent<MissileController>().target = "blue";
-                    _missile.GetComponent<MissileController>().direction = -redTankBarrel.up;
+                    _missile.GetComponent<MissileController>().direction = redTankBarrel.up;
                     _missile.SetActive(true);
                     return true;
                 }
