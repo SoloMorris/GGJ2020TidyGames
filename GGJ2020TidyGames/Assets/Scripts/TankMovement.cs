@@ -15,36 +15,118 @@ public class TankMovement : MonoBehaviour
 
     public GameObject rotationTarget;
 
+    private string[] inputNames = new string[4];
+    public int controllerInt;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateControls();
     }
 
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("HorizontalRed");
-        movement.y = Input.GetAxisRaw("VerticalRed");
+        movement.x = GetInputs(controllerInt, input.RIGHT);
+        movement.y = GetInputs(controllerInt, input.UP);
+        Debug.Log(movement);
     }
 
     private void FixedUpdate()
     {
-        if (movement.sqrMagnitude > 0.0f)
+        if (movement.magnitude > 0.0f)
         {
             //rb.MovePosition(rb.position + Vector2.up * movementSpeed * Time.fixedDeltaTime);
-            rb.AddRelativeForce(Vector2.up * 4f, ForceMode2D.Force);
+            rb.AddRelativeForce(Vector2.up * 10f, ForceMode2D.Force);
+
+
+
         }
-        if (movement.sqrMagnitude > 0.0f)
+        if (movement.magnitude > 0.0f)
         {
-            angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90;
-            float rotate = Mathf.Lerp(rb.rotation, angle, 0.8f *Time.fixedDeltaTime);
-            //rb.rotation = rotate;
-            Vector3 targetDirection = rotationTarget.transform.position - transform.position;
-            Vector3 newDirection = Vector3.RotateTowards(transform.position, targetDirection, 10 * Time.fixedDeltaTime, 100.0f);
-            //transform.rotation = Quaternion.LookRotation(new Vector3(0,0, Mathf.Atan2(newDirection.y, newDirection.x) * Mathf.Rad2Deg - 90));
-            transform.rotation = Quaternion.LookRotation(newDirection);
+            //angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90;
+            ////float rotate = Mathf.Lerp(rb.rotation, angle, 0.8f *Time.fixedDeltaTime);
+            ////rb.rotation = rotate;
+            ////Vector3 targetDirection = rotationTarget.transform.position - transform.position;
+            //Vector3 newDirection = Vector3.RotateTowards(transform.forward, movement, 10 * Time.fixedDeltaTime, 100.0f);
+            //Debug.Log(movement);
+            ////transform.rotation = Quaternion.LookRotation(new Vector3(0,0, Mathf.Atan2(newDirection.y, newDirection.x) * Mathf.Rad2Deg - 90));
+            //transform.rotation = Quaternion.LookRotation(newDirection);
+
+            //var angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90;
+            //Quaternion something = Quaternion.AngleAxis(angle, Vector3.forward);
+            //Vector3 newRotation = Vector3.RotateTowards(transform.forward,new Vector3(0,0,something.eulerAngles.z), 100 * Time.deltaTime, 0.0f);
+            //Debug.Log(something.eulerAngles);
+            //// Draw a ray pointing at our target in
+            //Debug.DrawRay(transform.position, newRotation, Color.red);
+            //transform.rotation = Quaternion.LookRotation(newRotation);
+
+            Quaternion targetRotation = Quaternion.LookRotation(movement, Vector3.back);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 4);
+            transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
         }
         
+    }
+
+    private float GetInputs(int controllerInt, input inputType)
+    {
+        float output = 0;
+
+        switch (inputType)
+        {
+            case input.LEFT:
+            case input.RIGHT:
+                output = Input.GetAxis(inputNames[0]);
+                break;
+            case input.A:
+                if (Input.GetButtonDown(inputNames[2]))
+                {
+                    output = 1;
+                }
+                break;
+            case input.X:
+                if (Input.GetButtonUp(inputNames[3]))
+                {
+                    output = 1;
+                }
+                break;
+            case input.UP:
+            case input.DOWN:
+                output = Input.GetAxis(inputNames[1]);
+                break;
+        }
+
+        return output;
+    }
+
+    public void UpdateControls()
+    {
+        switch (controllerInt)
+        {
+            case 1:
+                inputNames[0] = "HorizontalOne";
+                inputNames[1] = "VerticalOne";
+                inputNames[2] = "AOne";
+                inputNames[3] = "XOne";
+                break;
+            case 2:
+                inputNames[0] = "HorizontalTwo";
+                inputNames[1] = "VerticalTwo";
+                inputNames[2] = "ATwo";
+                inputNames[3] = "XTwo";
+                break;
+            case 3:
+                inputNames[0] = "HorizontalThree";
+                inputNames[1] = "VerticalThree";
+                inputNames[2] = "AThree";
+                inputNames[3] = "XThree";
+                break;
+            case 4:
+                inputNames[0] = "HorizontalFour";
+                inputNames[1] = "VerticalFour";
+                inputNames[2] = "AFour";
+                inputNames[3] = "XFour";
+                break;
+        }
     }
 }
