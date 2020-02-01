@@ -22,7 +22,7 @@ public class MissileController : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = (direction * travelSpeed);
         if (lifeTimer >= lifeDuration)
         {
-            ResetValues();
+            Explode();
         }
     }
 
@@ -39,8 +39,14 @@ public class MissileController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacles"))
         {
-            ResetValues();
+            Explode();
         }
+    }
+
+    private void Explode()
+    {
+        VFXManager.instance.PlayParticleSystemFromVFXList(gameObject, "bulletExplode");
+        ResetValues();
     }
     private void ResetValues()
     {
