@@ -93,6 +93,7 @@ public class VFXManager : MonoBehaviour
                 {
                     _vfx.target = _target;
                     _vfx.instance.SetActive(true);
+                    _vfx.instance.transform.rotation = _vfx.target.transform.rotation;
                     _vfx.instance.transform.position = _vfx.target.transform.position;
                     _vfx.effect.Play();
                     return true;
@@ -125,6 +126,7 @@ public class VFXManager : MonoBehaviour
                 {
                     _vfx.target = _target;
                     _vfx.instance.SetActive(true);
+                    _vfx.instance.transform.rotation = _vfx.target.transform.rotation;
                     _vfx.instance.transform.position = _vfx.target.transform.position + _offset;
                     _vfx.effect.Play();
                     return true;
@@ -158,6 +160,7 @@ public class VFXManager : MonoBehaviour
                 {
                     _vfx.target = _target;
                     _vfx.instance.SetActive(true);
+                    _vfx.instance.transform.rotation = _vfx.target.transform.rotation;
                     _vfx.instance.transform.position = _vfx.target.transform.position;
                     _vfx.effect.Play();
                     return true;
@@ -191,8 +194,8 @@ public class VFXManager : MonoBehaviour
                 {
                     _vfx.target = _target;
                     _vfx.instance.SetActive(true);
-                    _vfx.instance.transform.position = _vfx.target.transform.position;
                     _vfx.instance.transform.rotation = Quaternion.Inverse(_vfx.target.transform.rotation);
+                    _vfx.instance.transform.position = _vfx.target.transform.position;
                     _vfx.effect.Play();
                     return true;
                 }

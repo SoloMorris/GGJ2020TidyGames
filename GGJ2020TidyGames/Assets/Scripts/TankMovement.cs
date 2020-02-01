@@ -15,10 +15,12 @@ public class TankMovement : MonoBehaviour
 
     private string[] inputNames = new string[4];
     public int controllerInt;
+    [SerializeField] private ParticleSystem movementFX;
 
     // Start is called before the first frame update
     void Start()
     {
+        VFXManager.instance.AddParticleSystemToVFXList(movementFX, "moveTrails");
         UpdateControls();
     }
 
@@ -35,6 +37,7 @@ public class TankMovement : MonoBehaviour
         {
             //rb.MovePosition(rb.position + Vector2.up * movementSpeed * Time.fixedDeltaTime);
             rb.AddRelativeForce(Vector2.up * 10f, ForceMode2D.Force);
+            VFXManager.instance.PlayParticleSystemFromVFXList(gameObject, "moveTrails", true);
 
 
 
