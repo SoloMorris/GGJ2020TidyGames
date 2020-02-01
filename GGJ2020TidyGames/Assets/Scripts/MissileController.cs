@@ -20,7 +20,6 @@ public class MissileController : MonoBehaviour
     {
         lifeTimer += Time.deltaTime;
         GetComponent<Rigidbody2D>().velocity = (direction * travelSpeed);
-        print(transform.forward);
         if (lifeTimer >= lifeDuration)
         {
             ResetValues();
@@ -38,7 +37,7 @@ public class MissileController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag("Obstacles"))
         {
             ResetValues();
         }

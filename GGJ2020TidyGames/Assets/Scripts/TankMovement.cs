@@ -13,8 +13,6 @@ public class TankMovement : MonoBehaviour
 
     public float angle;
 
-    public GameObject rotationTarget;
-
     private string[] inputNames = new string[4];
     public int controllerInt;
 
@@ -29,7 +27,6 @@ public class TankMovement : MonoBehaviour
     {
         movement.x = GetInputs(controllerInt, input.RIGHT);
         movement.y = GetInputs(controllerInt, input.UP);
-        Debug.Log(movement);
     }
 
     private void FixedUpdate()
