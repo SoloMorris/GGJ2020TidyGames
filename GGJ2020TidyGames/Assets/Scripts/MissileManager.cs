@@ -24,6 +24,7 @@ public class MissileManager : MonoBehaviour
     private float missileSpeed;
 
     [SerializeField] private ParticleSystem firePuff;
+    [SerializeField] private ParticleSystem bulletExplosion;
 
     private void Awake()
     {
@@ -42,7 +43,8 @@ public class MissileManager : MonoBehaviour
             blueMissiles.Add(Instantiate(blueMissile, transform));
             blueMissiles[i].SetActive(false);
 
-            VFXManager.instance.AddParticleSystemToVFXList(firePuff, "fireBullet", 2);
+            VFXManager.instance.AddParticleSystemToVFXList(firePuff, "fireBullet", 4);
+            VFXManager.instance.AddParticleSystemToVFXList(bulletExplosion, "bulletExplode", 4);
             Debug.Log("1");
         }
 
