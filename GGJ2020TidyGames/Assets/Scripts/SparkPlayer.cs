@@ -39,7 +39,6 @@ public class SparkPlayer : MonoBehaviour
         //tilemap = GameObject.FindGameObjectWithTag("Circuit_Board").GetComponent<Tilemap>();
         board = tilemap.gameObject.GetComponent<CircuitBoard>();
 
-        UpdateControls();
 
         currentPos = new Vector2Int(6, 6);
         Vector3Int startPos = new Vector3Int(6, 6, 0);
@@ -48,6 +47,7 @@ public class SparkPlayer : MonoBehaviour
 
     private void Update()
     {
+        UpdateControls();
         Repairing();
         Movement();
     }
@@ -67,7 +67,7 @@ public class SparkPlayer : MonoBehaviour
             if (tilemap.GetTile(posV3).name == "ATile")
             {
                 output = board.RepairButton(button.DASH);
-                Debug.Log("dash repaired");
+                Debug.Log("dash repaired - " + board);
             }
             else if (tilemap.GetTile(posV3).name == "XTile")
             {
