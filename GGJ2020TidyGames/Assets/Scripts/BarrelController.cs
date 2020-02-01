@@ -11,6 +11,8 @@ public class BarrelController : MonoBehaviour
     public Quaternion targetRotation;
 
     public Vector2 aim;
+
+    public int turretTurning = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,18 +32,14 @@ public class BarrelController : MonoBehaviour
     {
         if (aim.sqrMagnitude > 0.0f)
         {
-            transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z - 90);
+            transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
 
             targetRotation = Quaternion.LookRotation(aim, Vector3.back);
-            //targetRotation.eulerAngles.Set(0, 0, targetRotation.eulerAngles.z - 90);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 4f * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
-            //float angle = Mathf.Atan2(aim.y, aim.x) * Mathf.Rad2Deg;
-            //float rotate = Mathf.Lerp(rb.rotation, angle, 1f * Time.fixedDeltaTime);
-            //rb.rotation = rotate;
+            transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z - 90);
+
         }
        
-        //transform.Rotate(0, 0, Mathf.Atan2(aim.y, aim.x) * Mathf.Rad2Deg);
-        //rb.MoveRotation(Quaternion.Euler(aim.x, 0, aim.y));
+
     }
 }
