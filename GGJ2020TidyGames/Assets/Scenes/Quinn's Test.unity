@@ -2267,11 +2267,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxCounts: 03000000030000000500000005000000
+  displays:
+  - {fileID: 2144527738}
+  - {fileID: 1711106256}
+  - {fileID: 1969120547}
+  - {fileID: 168266764}
   damageDelay:
   - 999
   - 999
-  - 3
-  - 3
+  - 1
+  - 1
 --- !u!483693784 &438179068
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -2652,7 +2657,7 @@ MonoBehaviour:
   maxPos: {x: 14, y: 9}
   currentPos: {x: 0, y: 0}
   controllerInt: 2
-  moveDelay: 0.033
+  moveDelay: 0.1
 --- !u!212 &652369231
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4006,7 +4011,7 @@ MonoBehaviour:
   maxPos: {x: 14, y: 9}
   currentPos: {x: 0, y: 0}
   controllerInt: 1
-  moveDelay: 0.033
+  moveDelay: 0.1
 --- !u!212 &1298583058
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6010,11 +6015,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxCounts: 03000000030000000500000005000000
+  displays:
+  - {fileID: 785282017}
+  - {fileID: 1357915567}
+  - {fileID: 613046633}
+  - {fileID: 611360524}
   damageDelay:
   - 999
   - 999
-  - 3
-  - 3
+  - 1
+  - 1
 --- !u!1 &1659961652
 GameObject:
   m_ObjectHideFlags: 0
