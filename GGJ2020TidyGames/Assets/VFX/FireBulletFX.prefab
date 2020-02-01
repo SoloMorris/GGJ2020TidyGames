@@ -115,7 +115,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -168,7 +168,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 12
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -659,7 +659,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 0
+    type: 17
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -975,7 +975,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 100
+        scalar: 200
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -1048,13 +1048,22 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.8128387
         - serializedVersion: 3
-          time: 0.4904245
-          value: 1
-          inSlope: -6.704236
-          outSlope: -6.704236
+          time: 0.06856523
+          value: 0.9179436
+          inSlope: 2.6581318
+          outSlope: 2.6581318
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.4904245
+          value: 0.66216135
+          inSlope: -2.8181155
+          outSlope: -2.8181155
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.3031096
           outWeight: 0.17404564
         - serializedVersion: 3
           time: 1
