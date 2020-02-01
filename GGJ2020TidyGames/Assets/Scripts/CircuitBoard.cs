@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public enum button
 {
@@ -23,9 +21,6 @@ public class CircuitBoard : MonoBehaviour
     private bool[] buttonAlive = new bool[4];
 
     private float[] lastDamageTick = new float[4];
-
-    public Slider[] displays = new Slider[4];
-
     [SerializeField]
     private float[] damageDelay = new float[4];
 
@@ -35,7 +30,7 @@ public class CircuitBoard : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             buttonHealth[i] = maxCounts[i];
-            displays[i].maxValue = maxCounts[i];
+            //buttonHealth[i] = 0;
             lastDamageTick[i] = 0;
         }
     }
@@ -44,15 +39,6 @@ public class CircuitBoard : MonoBehaviour
     void Update()
     {
         AliveUpdate();
-        DisplayUpdate();
-    }
-
-    private void DisplayUpdate()
-    {
-        for (int i = 0; i < 4; i++)
-        {
-            displays[i].value = buttonHealth[i];
-        }
     }
 
     private void FixedUpdate()
