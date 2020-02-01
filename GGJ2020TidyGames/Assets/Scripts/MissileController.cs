@@ -23,8 +23,7 @@ public class MissileController : MonoBehaviour
         print(transform.forward);
         if (lifeTimer >= lifeDuration)
         {
-            transform.position = Vector2.zero;
-            gameObject.SetActive(false);
+            ResetValues();
         }
     }
 
@@ -41,8 +40,13 @@ public class MissileController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Wall"))
         {
-            transform.position = Vector2.zero;
-            gameObject.SetActive(false);
+            ResetValues();
         }
+    }
+    private void ResetValues()
+    {
+        transform.position = Vector2.zero;
+        gameObject.SetActive(false);
+        lifeTimer = 0;
     }
 }

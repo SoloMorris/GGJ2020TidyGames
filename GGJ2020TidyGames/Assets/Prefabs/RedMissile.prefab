@@ -118,3 +118,4 @@ MonoBehaviour:
   target: 
   travelSpeed: 0
   direction: {x: 0, y: 0}
+  lifeDuration: 5

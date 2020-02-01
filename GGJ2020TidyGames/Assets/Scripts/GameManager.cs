@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] ParticleSystem firePuff;
     void Start()
     {
-        VFXManager.instance.AddParticleSystemToVFXList(firePuff, "bulletLaunch");
     }
 
     // Update is called once per frame
