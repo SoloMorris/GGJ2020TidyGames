@@ -526,6 +526,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1418905507}
+  angle: 0
+  rotationTarget: {fileID: 0}
+  controllerInt: 1
 --- !u!61 &1418905506
 BoxCollider2D:
   m_ObjectHideFlags: 0
