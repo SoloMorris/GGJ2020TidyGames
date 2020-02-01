@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 119199556}
   - component: {fileID: 119199555}
   - component: {fileID: 119199554}
+  - component: {fileID: 119199558}
   m_Layer: 0
   m_Name: TankBodyBlue
   m_TagString: Untagged
@@ -254,6 +255,22 @@ Transform:
   m_Father: {fileID: 983064986}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &119199558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119199553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bae160a4b996104a8c8ff04b7146148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 119199554}
+  angle: 0
+  rotationTarget: {fileID: 0}
+  controllerInt: 2
 --- !u!1 &913950889
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +471,8 @@ MonoBehaviour:
   tankBody: {fileID: 119199553}
   targetRotation: {x: 0, y: 0, z: 0, w: 0}
   aim: {x: 0, y: 0}
+  turretTurning: 0
+  controllerInt: 0
 --- !u!50 &963604914
 Rigidbody2D:
   serializedVersion: 4
@@ -482,11 +501,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2897371123681194370, guid: 852f8b80b893ccc47a7c23c22b144e65,
-        type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
     - target: {fileID: 2897371123681194368, guid: 852f8b80b893ccc47a7c23c22b144e65,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -541,6 +555,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897371123681194370, guid: 852f8b80b893ccc47a7c23c22b144e65,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 2897371123681194382, guid: 852f8b80b893ccc47a7c23c22b144e65,
         type: 3}
@@ -831,11 +850,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 268577152503473218, guid: 33ec934a3e676ca4e848a7a6a2cbde4e,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerRed
-      objectReference: {fileID: 0}
     - target: {fileID: 268577152503473217, guid: 33ec934a3e676ca4e848a7a6a2cbde4e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -890,6 +904,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 268577152503473218, guid: 33ec934a3e676ca4e848a7a6a2cbde4e,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 268577153338325154, guid: 33ec934a3e676ca4e848a7a6a2cbde4e,
+        type: 3}
+      propertyPath: controllerInt
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ec934a3e676ca4e848a7a6a2cbde4e, type: 3}
