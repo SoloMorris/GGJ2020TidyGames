@@ -8,6 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
 <<<<<<< HEAD
+<<<<<<< HEAD
 [LOG] AsyncManager::init                       : manager 00000244363C9D88 isAsync 0 updatePeriod 0.02
 =======
 <<<<<<< HEAD
@@ -20,6 +21,9 @@
 >>>>>>> develop
 >>>>>>> develop
 >>>>>>> develop
+=======
+[LOG] AsyncManager::init                       : manager 0000027AB9ED8068 isAsync 0 updatePeriod 0.02
+>>>>>>> GameStuff
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -33,6 +37,7 @@
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+<<<<<<< HEAD
 <<<<<<< HEAD
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
@@ -50,3 +55,5 @@
 [LOG] SystemI::close                           : Closed.
 =======
 >>>>>>> develop
+=======
+>>>>>>> GameStuff
