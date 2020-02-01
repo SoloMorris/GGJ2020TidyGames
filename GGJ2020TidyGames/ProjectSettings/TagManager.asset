@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Circuit_Board
+  - Obstacles
+  - TankRed
+  - TankBlue
   layers:
   - Default
   - TransparentFX

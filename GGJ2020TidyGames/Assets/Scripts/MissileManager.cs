@@ -6,11 +6,11 @@ public class MissileManager : MonoBehaviour
 {
     public static MissileManager instance;
 
-    [SerializeField] private Transform redTankBarrel;
-    [SerializeField] private Transform redSpawner;
+    [SerializeField] private GameObject redTankBarrel;
+    [SerializeField] private GameObject redSpawner;
 
-    [SerializeField] private Transform blueTankBarrel;
-    [SerializeField] private Transform blueSpawner;
+    [SerializeField] private GameObject blueTankBarrel;
+    [SerializeField] private GameObject blueSpawner;
 
     [SerializeField] private GameObject redMissile;
     [SerializeField] private GameObject blueMissile;
@@ -18,7 +18,12 @@ public class MissileManager : MonoBehaviour
     private List<GameObject> redMissiles = new List<GameObject>();
     private List<GameObject> blueMissiles = new List<GameObject>();
     public int maxMissiles;
-    [SerializeField] private float missileSpeed;
+    
+    [SerializeField]
+    [Range (0.0f,10f)]
+    private float missileSpeed;
+
+    [SerializeField] private ParticleSystem firePuff;
 
     private void Awake()
     {
@@ -34,11 +39,12 @@ public class MissileManager : MonoBehaviour
         {
             redMissiles.Add(Instantiate(redMissile, transform));
             redMissiles[i].SetActive(false);
-            //blueMissiles.Add(Instantiate(blueMissile, transform));
-            //blueMissiles[i].SetActive(false);
+            blueMissiles.Add(Instantiate(blueMissile, transform));
+            blueMissiles[i].SetActive(false);
 
-            Debug.Log("1");
+            VFXManager.instance.AddParticleSystemToVFXList(firePuff, "fireBullet", 2);
         }
+
     }
 
     public bool FireMissile(string colour)
@@ -50,11 +56,14 @@ public class MissileManager : MonoBehaviour
                 if (!_missile.activeSelf)
                 {
                     _missile.GetComponent<MissileController>().travelSpeed = missileSpeed;
-                    _missile.transform.rotation = redTankBarrel.rotation;
-                    _missile.transform.position = redSpawner.position;
+                    _missile.transform.rotation = redTankBarrel.transform.rotation;
+                    _missile.transform.position = redSpawner.transform.position;
+
                     _missile.GetComponent<MissileController>().target = "blue";
-                    _missile.GetComponent<MissileController>().direction = -redTankBarrel.up;
+                    _missile.GetComponent<MissileController>().direction = redTankBarrel.transform.up;
                     _missile.SetActive(true);
+
+                    VFXManager.instance.PlayParticleSystemFromVFXList(redSpawner, "fireBullet", true, (redTankBarrel.transform.up * 0.75f));
                     return true;
                 }
             }
@@ -66,10 +75,13 @@ public class MissileManager : MonoBehaviour
                 if (!_missile.activeSelf)
                 {
                     _missile.GetComponent<MissileController>().travelSpeed = missileSpeed;
-                    _missile.transform.rotation = blueTankBarrel.rotation;
-                    _missile.transform.position = blueSpawner.position;
+                    _missile.transform.rotation = blueTankBarrel.transform.rotation;
+                    _missile.transform.position = blueSpawner.transform.position;
+
                     _missile.GetComponent<MissileController>().target = "red";
+                    _missile.GetComponent<MissileController>().direction = blueTankBarrel.transform.up;
                     _missile.SetActive(true);
+                    VFXManager.instance.PlayParticleSystemFromVFXList(blueSpawner, "fireBullet", true, (blueTankBarrel.transform.up * 0.75f));
                     return true;
                 }
             }

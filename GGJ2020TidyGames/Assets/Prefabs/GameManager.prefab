@@ -57,6 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f616933824327946934b4536eecb5dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firePuff: {fileID: 0}
 --- !u!114 &2897371123681194382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,4 +78,6 @@ MonoBehaviour:
     type: 3}
   blueMissile: {fileID: 0}
   maxMissiles: 6
-  missileSpeed: 10
+  missileSpeed: 9
+  firePuff: {fileID: 1802658953125514541, guid: 351a52106f404a7488fe1519a99a869a,
+    type: 3}
