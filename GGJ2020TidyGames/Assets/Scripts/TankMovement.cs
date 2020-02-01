@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class TankMovement : MonoBehaviour
 {
-
-    float movementSpeed = 2f;
+    [SerializeField]
+    [Range (0f,20000f)]
+    private float movementSpeed = 2f;
 
     public Rigidbody2D rb;
 
@@ -27,6 +28,20 @@ public class TankMovement : MonoBehaviour
     {
         movement.x = GetInputs(controllerInt, input.RIGHT);
         movement.y = GetInputs(controllerInt, input.UP);
+        if (GetInputs(controllerInt, input.X) == 1)
+        {
+            if (controllerInt == 1)
+            {
+                MissileManager.instance.FireMissile("red");
+                Debug.Log("Red Shot!");
+            }
+            else if (controllerInt == 2)
+            {
+                MissileManager.instance.FireMissile("blue");
+                Debug.Log("Blue Shot!");
+            }
+
+        }
     }
 
     private void FixedUpdate()
@@ -34,7 +49,7 @@ public class TankMovement : MonoBehaviour
         if (movement.magnitude > 0.0f)
         {
             //rb.MovePosition(rb.position + Vector2.up * movementSpeed * Time.fixedDeltaTime);
-            rb.AddRelativeForce(Vector2.up * 10f, ForceMode2D.Force);
+            rb.AddRelativeForce(Vector2.up * movementSpeed * Time.deltaTime, ForceMode2D.Force);
 
 
 

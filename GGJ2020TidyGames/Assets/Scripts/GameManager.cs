@@ -14,10 +14,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            MissileManager.instance.FireMissile("red");
-        }
+
     }
     private void FixedUpdate()
     {

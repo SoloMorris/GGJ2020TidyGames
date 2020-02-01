@@ -353,6 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bae160a4b996104a8c8ff04b7146148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 2000
   rb: {fileID: 1418905507}
   angle: 0
   controllerInt: 1
