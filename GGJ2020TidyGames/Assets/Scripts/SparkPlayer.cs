@@ -17,10 +17,12 @@ public enum input
 
 public class SparkPlayer : MonoBehaviour
 {
+    [SerializeField]
     private Tilemap tilemap;
     private CircuitBoard board;
 
     public Vector2Int maxPos;
+    [SerializeField]
     private Vector2Int currentPos;
     private Vector2Int desiredMove = new Vector2Int(0,0);
 
@@ -31,12 +33,10 @@ public class SparkPlayer : MonoBehaviour
     private float lastMoveTime = 0;
     public float moveDelay;
 
-    public Vector2Int[] repairGrids = new Vector2Int[4];
-
     // Start is called before the first frame update
     void Start()
     {
-        tilemap = GameObject.FindGameObjectWithTag("Circuit_Board").GetComponent<Tilemap>();
+        //tilemap = GameObject.FindGameObjectWithTag("Circuit_Board").GetComponent<Tilemap>();
         board = tilemap.gameObject.GetComponent<CircuitBoard>();
 
         UpdateControls();
