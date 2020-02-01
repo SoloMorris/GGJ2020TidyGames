@@ -15,17 +15,21 @@ public class TankMovement : MonoBehaviour
 
     public GameObject rotationTarget;
 
+    private string[] inputNames = new string[4];
+    public int controllerInt;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateControls();
     }
 
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("HorizontalRed");
-        movement.y = Input.GetAxisRaw("VerticalRed");
+        movement.x = GetInputs(controllerInt, input.RIGHT);
+        movement.y = GetInputs(controllerInt, input.UP);
+        Debug.Log(movement);
     }
 
     private void FixedUpdate()
@@ -62,5 +66,67 @@ public class TankMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
         }
         
+    }
+
+    private float GetInputs(int controllerInt, input inputType)
+    {
+        float output = 0;
+
+        switch (inputType)
+        {
+            case input.LEFT:
+            case input.RIGHT:
+                output = Input.GetAxis(inputNames[0]);
+                break;
+            case input.A:
+                if (Input.GetButtonDown(inputNames[2]))
+                {
+                    output = 1;
+                }
+                break;
+            case input.X:
+                if (Input.GetButtonUp(inputNames[3]))
+                {
+                    output = 1;
+                }
+                break;
+            case input.UP:
+            case input.DOWN:
+                output = Input.GetAxis(inputNames[1]);
+                break;
+        }
+
+        return output;
+    }
+
+    public void UpdateControls()
+    {
+        switch (controllerInt)
+        {
+            case 1:
+                inputNames[0] = "HorizontalOne";
+                inputNames[1] = "VerticalOne";
+                inputNames[2] = "AOne";
+                inputNames[3] = "XOne";
+                break;
+            case 2:
+                inputNames[0] = "HorizontalTwo";
+                inputNames[1] = "VerticalTwo";
+                inputNames[2] = "ATwo";
+                inputNames[3] = "XTwo";
+                break;
+            case 3:
+                inputNames[0] = "HorizontalThree";
+                inputNames[1] = "VerticalThree";
+                inputNames[2] = "AThree";
+                inputNames[3] = "XThree";
+                break;
+            case 4:
+                inputNames[0] = "HorizontalFour";
+                inputNames[1] = "VerticalFour";
+                inputNames[2] = "AFour";
+                inputNames[3] = "XFour";
+                break;
+        }
     }
 }
