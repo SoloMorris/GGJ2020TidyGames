@@ -14,12 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: D:\GGJ2020TidyGames\GGJ2020TidyGames\Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 637161792541359064
+  lastModified: 637161812437296800
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 125536
   Exists: 1
+--- !u!114 &-6168473797611564937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &-5711634378394173967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,6 +82,22 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-4589017814060288010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Accel
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &-4489460610894478012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,23 +114,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
---- !u!114 &-4410251221468062246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-2485687391231148946
+--- !u!114 &-2728253512800144972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,7 +228,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -2485687391231148946}
+  - {fileID: -2728253512800144972}
   MinDistance: 0
   MaxDistance: 0
   Length: 1350
@@ -229,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637161792541369039
+  lastModified: 637161812437296800
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -280,7 +296,7 @@ MonoBehaviour:
   - {fileID: 9050666409512772842}
   MasterBankRef: {fileID: -6985832160244288661}
   StringsBankRef: {fileID: -506063851618890627}
-  stringsBankWriteTime: 637161792541369039
+  stringsBankWriteTime: 637161812437296800
   cacheVersion: 2
 --- !u!114 &722376986898362064
 MonoBehaviour:
@@ -410,7 +426,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -193489504212548766}
+  - {fileID: -4589017814060288010}
   MinDistance: 0
   MaxDistance: 0
   Length: 250
@@ -466,7 +482,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -4410251221468062246}
+  - {fileID: -6168473797611564937}
   MinDistance: 0
   MaxDistance: 0
   Length: 2300

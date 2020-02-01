@@ -18,7 +18,10 @@ public class MissileManager : MonoBehaviour
     private List<GameObject> redMissiles = new List<GameObject>();
     private List<GameObject> blueMissiles = new List<GameObject>();
     public int maxMissiles;
-    [SerializeField] private float missileSpeed;
+    
+    [SerializeField]
+    [Range (0.0f,10f)]
+    private float missileSpeed;
 
     [SerializeField] private ParticleSystem firePuff;
 
