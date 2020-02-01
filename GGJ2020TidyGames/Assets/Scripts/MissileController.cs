@@ -20,7 +20,6 @@ public class MissileController : MonoBehaviour
     {
         lifeTimer += Time.deltaTime;
         GetComponent<Rigidbody2D>().velocity = (direction * travelSpeed);
-        print(transform.forward);
         if (lifeTimer >= lifeDuration)
         {
             ResetValues();
