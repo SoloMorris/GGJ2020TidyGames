@@ -160,7 +160,6 @@ MonoBehaviour:
   rb: {fileID: 268577153202828125}
   firepoint: {fileID: 268577152552147780}
   tankBody: {fileID: 268577153338325155}
-  targetRotation: {x: 0, y: 0, z: 0, w: 0}
   aim: {x: 0, y: 0}
   turretTurning: 0
   controllerInt: 0
@@ -356,5 +355,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1418905507}
   angle: 0
-  rotationTarget: {fileID: 0}
   controllerInt: 1

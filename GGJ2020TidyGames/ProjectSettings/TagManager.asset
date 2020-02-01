@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Circuit_Board
   - Obstacles
+  - TankRed
+  - TankBlue
   layers:
   - Default
   - TransparentFX
