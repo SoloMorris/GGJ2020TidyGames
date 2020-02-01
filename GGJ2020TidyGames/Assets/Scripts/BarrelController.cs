@@ -58,18 +58,6 @@ public class BarrelController : MonoBehaviour
             case input.RIGHT:
                 output = Input.GetAxis(inputNames[0]);
                 break;
-            case input.A:
-                if (Input.GetButtonDown(inputNames[2]))
-                {
-                    output = 1;
-                }
-                break;
-            case input.X:
-                if (Input.GetButtonUp(inputNames[3]))
-                {
-                    output = 1;
-                }
-                break;
             case input.UP:
             case input.DOWN:
                 output = Input.GetAxis(inputNames[1]);
