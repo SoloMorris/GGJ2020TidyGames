@@ -8,11 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3848835777851140057}
-  - component: {fileID: 7735456602924306924}
-  - component: {fileID: -2715343822241262640}
-  - component: {fileID: 8940524095494091546}
-  - component: {fileID: 5382540271599719927}
+  - component: {fileID: 1072010898375008457}
+  - component: {fileID: 891214054882429032}
+  - component: {fileID: 2387547003716402586}
+  - component: {fileID: -592590453177984154}
+  - component: {fileID: 295964813964264318}
   m_Layer: 0
   m_Name: BlueMissile
   m_TagString: Untagged
@@ -104,29 +104,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8940524095494091546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7502819649423233646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7623afac14fb03a44af9927ef06354ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: 
-  travelSpeed: 0
-  direction: {x: 0, y: 0}
-  lifeDuration: 5
---- !u!61 &5382540271599719927
+--- !u!61 &-592590453177984154
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7502819649423233646}
+  m_GameObject: {fileID: 7260386037549568822}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -146,3 +130,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.125, y: 0.21875}
   m_EdgeRadius: 0
+--- !u!114 &295964813964264318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7260386037549568822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7623afac14fb03a44af9927ef06354ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 
+  travelSpeed: 0
+  direction: {x: 0, y: 0}
+  lifeDuration: 5
