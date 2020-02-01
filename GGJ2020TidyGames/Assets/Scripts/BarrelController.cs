@@ -8,7 +8,6 @@ public class BarrelController : MonoBehaviour
     public GameObject firepoint;
     public GameObject tankBody;
 
-
     public Vector2 aim;
 
     public int turretTurning = 0;
@@ -30,6 +29,18 @@ public class BarrelController : MonoBehaviour
 
         aim.x = GetInputs(controllerInt, input.LEFT);
         aim.y = GetInputs(controllerInt, input.UP);
+        if (GetInputs(controllerInt, input.X) == 1)
+        {
+            if (controllerInt == 1)
+            {
+                MissileManager.instance.FireMissile("red");
+            }
+            if (controllerInt == 2)
+            {
+                MissileManager.instance.FireMissile("blue");
+            }
+
+        }
     }
 
     private void FixedUpdate()
@@ -61,6 +72,7 @@ public class BarrelController : MonoBehaviour
                 if (Input.GetButtonDown(inputNames[2]))
                 {
                     output = 1;
+                    Debug.Log("Fire was pressed");
                 }
                 break;
             case input.X:
