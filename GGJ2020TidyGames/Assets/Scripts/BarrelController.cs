@@ -37,11 +37,11 @@ public class BarrelController : MonoBehaviour
     {
         if (aim.sqrMagnitude > 0.0f)
         {
-            transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
-
-            targetRotation = Quaternion.LookRotation(aim, Vector3.back);
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 4f * Time.deltaTime);
             transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z - 90);
+
+            targetRotation = Quaternion.LookRotation(aim, Vector3.forward);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 4f * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
 
         }
        
