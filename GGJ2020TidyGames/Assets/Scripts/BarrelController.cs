@@ -29,7 +29,7 @@ public class BarrelController : MonoBehaviour
         if (aim.sqrMagnitude > 0.0f)
         {
             float angle = Mathf.Atan2(aim.y, aim.x) * Mathf.Rad2Deg;
-            float rotate = Mathf.Lerp(rb.rotation, angle, 0.1f);
+            float rotate = Mathf.Lerp(rb.rotation, angle, 1f * Time.fixedDeltaTime);
             rb.rotation = rotate;
         }
        
