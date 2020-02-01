@@ -58,7 +58,7 @@ public class TankMovement : MonoBehaviour
             //transform.rotation = Quaternion.LookRotation(newRotation);
 
             Quaternion targetRotation = Quaternion.LookRotation(movement, Vector3.back);
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 10);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 4);
             transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
         }
         
