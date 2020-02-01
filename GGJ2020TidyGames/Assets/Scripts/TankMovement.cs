@@ -5,7 +5,7 @@ using UnityEngine;
 public class TankMovement : MonoBehaviour
 {
     [SerializeField]
-    [Range (0f,20000f)]
+    [Range(0f, 20000f)]
     private float movementSpeed = 2f;
 
     public Rigidbody2D rb;
@@ -46,6 +46,26 @@ public class TankMovement : MonoBehaviour
             }
 
         }
+
+        if (GetInputs(controllerInt, input.A) == 1)
+        {
+            rb.AddRelativeForce(Vector2.up * movementSpeed / 2 * Time.deltaTime, ForceMode2D.Impulse);
+
+            //switch (controllerInt)
+            //{
+            //    case 1:
+            //        MissileManager.instance.FireMissile("red");
+            //        Debug.Log("Red Shot! - " + controllerInt);
+            //        break;
+            //    case 2:
+            //        MissileManager.instance.FireMissile("blue");
+            //        Debug.Log("Blue Shot! - " + controllerInt);
+            //        break;
+            //    default:
+            //        break;
+            //}
+
+        }
     }
 
     private void FixedUpdate()
@@ -81,7 +101,7 @@ public class TankMovement : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 4);
             transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
         }
-        
+
     }
 
     private float GetInputs(int controllerInt, input inputType)
@@ -144,5 +164,10 @@ public class TankMovement : MonoBehaviour
                 inputNames[3] = "XFour";
                 break;
         }
+    }
+    public void GetHit(GameObject missile)
+    {
+        Vector2 pushbackDir = transform.position - missile.transform.position;
+        rb.AddForce(pushbackDir * movementSpeed / 8 * Time.deltaTime, ForceMode2D.Impulse);
     }
 }
