@@ -20,25 +20,29 @@ public class TankMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UpdateControls();
     }
 
     // Update is called once per frame
     void Update()
     {
+        UpdateControls();
         movement.x = GetInputs(controllerInt, input.RIGHT);
         movement.y = GetInputs(controllerInt, input.UP);
+
         if (GetInputs(controllerInt, input.X) == 1)
         {
-            if (controllerInt == 1)
+            switch (controllerInt)
             {
-                MissileManager.instance.FireMissile("red");
-                Debug.Log("Red Shot!");
-            }
-            else if (controllerInt == 2)
-            {
-                MissileManager.instance.FireMissile("blue");
-                Debug.Log("Blue Shot!");
+                case 1:
+                    MissileManager.instance.FireMissile("red");
+                    Debug.Log("Red Shot! - " + controllerInt);
+                    break;
+                case 2:
+                    MissileManager.instance.FireMissile("blue");
+                    Debug.Log("Blue Shot! - " + controllerInt);
+                    break;
+                default:
+                    break;
             }
 
         }
