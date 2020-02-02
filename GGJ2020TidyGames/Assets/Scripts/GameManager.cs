@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public enum gameState
 {
@@ -9,6 +10,14 @@ public enum gameState
     PLAYER_SELECT = 1,
     GAME_PLAY = 3,
     END_SCREEN = 4,
+}
+
+public enum characters
+{
+    RED_TANK = 0,
+    BLU_TANK = 1,
+    RED_CB = 2,
+    BLU_CB = 3
 }
 
 public class GameManager : MonoBehaviour
@@ -19,7 +28,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] Maps = new GameObject[5];
 
-    public Vector3[] coinSpawns = new Vector3[5];
+    public Transform[] coinSpawns = new Transform[5];
+    public bool noCoin = false;
+    private int coinLocation;
 
     public GameObject[] interfaces = new GameObject[4];
 
@@ -30,21 +41,23 @@ public class GameManager : MonoBehaviour
 
     private List<int> players = new List<int>();
     private int[] characters;
+    public GameObject[] units = new GameObject[4];
 
     public gameState state;
 
     public int controllerInt;
     private string[] inputNames = new string[4];
 
+    private float roundTimer;
+
     void Start()
     {
-
+        state = gameState.MENU;
     }
 
     // Update is called once per frame
     void Update()
     {
-        UpdateControls();
         UIUpdate();
 
         switch (state)
@@ -73,35 +86,92 @@ public class GameManager : MonoBehaviour
             if(GetInputs(i, input.A))
             {
                 state = gameState.MENU;
+                players.Clear();
             }
         }
     }
 
     private void GameUpdate()
     {
-        throw new NotImplementedException();
+        if (roundTimer == -99)
+        {
+            GameStart();
+        }
+
+        if (roundTimer > 0 && roundTimer != -99)
+        {
+            roundTimer -= 1 * Time.deltaTime;
+
+            if (noCoin)
+            {
+                int spawn = Random.Range(1, 5);
+
+                while (spawn == coinLocation)
+                {
+                    spawn = Random.Range(1, 5);
+                } 
+
+                SpawnCoin(spawn);
+            }
+        }
+        else
+        {
+            state = gameState.END_SCREEN;
+        }
+    }
+
+    private void GameEnd()
+    {
+        roundTimer = -99;
+    }
+
+    private void GameStart()
+    {
+        roundTimer = 60;
+        SpawnCoin(1);
+    }
+
+    private void SpawnCoin(int location)
+    {
+        GameObject newCoin = Instantiate(coin, coinSpawns[location]);
+        noCoin = false;
+        coinLocation = location;
     }
 
     private void PlayerSelectUpdate()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 1; i < 5; i++)
         {
             if (GetInputs(i, input.A))
             {
                 players.Add(i);
             }
 
+            if (GetInputs(i, input.X))
+            {
+                characters[1] = players[1];
+                characters[2] = players[2];
+                characters[3] = players[3];
+                characters[4] = players[4];
+                state = gameState.GAME_PLAY;
+            }
         }
     }
 
     private void MenuUpdate()
     {
-        throw new NotImplementedException();
+        for (int i = 1; i < 5; i++)
+        {
+            if (GetInputs(i, input.A))
+            {
+                state = gameState.PLAYER_SELECT;
+            }
+        }
     }
 
-    public void UpdateControls()
+    public void UpdateControls(int i)
     {
-        switch (controllerInt)
+        switch (i)
         {
             case 1:
                 inputNames[0] = "HorizontalOne";
@@ -130,8 +200,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private bool GetInputs(int controllerInt, input inputType)
+    private bool GetInputs(int controller, input inputType)
     {
+        UpdateControls(controller);
+
         bool output = false;
 
         switch (inputType)
