@@ -33,6 +33,10 @@ public class SparkPlayer : MonoBehaviour
     private float lastMoveTime = 0;
     public float moveDelay;
 
+    [SerializeField]
+    private GameObject aButton;
+    private SpriteRenderer aButtonSprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +47,9 @@ public class SparkPlayer : MonoBehaviour
         currentPos = new Vector2Int(6, 6);
         Vector3Int startPos = new Vector3Int(6, 6, 0);
         transform.position = tilemap.GetCellCenterWorld(startPos);
+
+        aButtonSprite = aButton.GetComponent<SpriteRenderer>();
+
     }
 
     private void Update()
@@ -60,10 +67,21 @@ public class SparkPlayer : MonoBehaviour
 
     private bool Repairing()
     {
+        Vector3Int posV3 = new Vector3Int(currentPos.x, currentPos.y, 0);
+
+        if (tilemap.GetTile(posV3).name == "ATile" || tilemap.GetTile(posV3).name == "XTile" ||
+            tilemap.GetTile(posV3).name == "MoveTile" || tilemap.GetTile(posV3).name == "AmmoTile")
+        {
+            aButtonSprite.enabled = true;
+
+        }
+        else
+        {
+            aButtonSprite.enabled = false;
+        }
         bool output = false;
         if (GetInputs(controllerInt, input.A))
         {
-            Vector3Int posV3 = new Vector3Int(currentPos.x, currentPos.y, 0);
             if (tilemap.GetTile(posV3).name == "ATile")
             {
                 output = board.RepairButton(button.DASH);
