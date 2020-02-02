@@ -109,4 +109,9 @@ public class CircuitBoard : MonoBehaviour
             }
         }
     }
+
+    public bool CheckButton(button target)
+    {
+        return buttonAlive[(int)target];
+    }
 }

@@ -17,6 +17,9 @@ public class TankMovement : MonoBehaviour
     private string[] inputNames = new string[4];
     public int controllerInt;
 
+    [SerializeField]
+    private CircuitBoard board;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,17 +32,21 @@ public class TankMovement : MonoBehaviour
         movement.x = GetInputs(controllerInt, input.RIGHT);
         movement.y = GetInputs(controllerInt, input.UP);
 
-        if (GetInputs(controllerInt, input.X) == 1)
+        if (GetInputs(controllerInt, input.X) == 1 && board.CheckButton(button.SHOOT) && board.CheckButton(button.RELOAD))
         {
             switch (controllerInt)
             {
                 case 1:
-                    MissileManager.instance.FireMissile("red");
-                    Debug.Log("Red Shot! - " + controllerInt);
+                    if (MissileManager.instance.FireMissile("red"))
+                    {
+                        board.DamageButton(button.RELOAD, 1);
+                    }
                     break;
                 case 2:
-                    MissileManager.instance.FireMissile("blue");
-                    Debug.Log("Blue Shot! - " + controllerInt);
+                    if (MissileManager.instance.FireMissile("blue"))
+                    {
+                        board.DamageButton(button.RELOAD, 1);
+                    }
                     break;
                 default:
                     break;
@@ -47,55 +54,18 @@ public class TankMovement : MonoBehaviour
 
         }
 
-        if (GetInputs(controllerInt, input.A) == 1)
+        if (GetInputs(controllerInt, input.A) == 1 && board.CheckButton(button.DASH))
         {
             rb.AddRelativeForce(Vector2.up * movementSpeed / 2 * Time.deltaTime, ForceMode2D.Impulse);
-
-            //switch (controllerInt)
-            //{
-            //    case 1:
-            //        MissileManager.instance.FireMissile("red");
-            //        Debug.Log("Red Shot! - " + controllerInt);
-            //        break;
-            //    case 2:
-            //        MissileManager.instance.FireMissile("blue");
-            //        Debug.Log("Blue Shot! - " + controllerInt);
-            //        break;
-            //    default:
-            //        break;
-            //}
-
+            board.DamageButton(button.DASH, 1);
         }
     }
 
     private void FixedUpdate()
     {
-        if (movement.magnitude > 0.0f)
+        if (movement.magnitude > 0.0f && board.CheckButton(button.MOVEMENT))
         {
-            //rb.MovePosition(rb.position + Vector2.up * movementSpeed * Time.fixedDeltaTime);
             rb.AddRelativeForce(Vector2.up * movementSpeed * Time.deltaTime, ForceMode2D.Force);
-
-
-
-        }
-        if (movement.magnitude > 0.0f)
-        {
-            //angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90;
-            ////float rotate = Mathf.Lerp(rb.rotation, angle, 0.8f *Time.fixedDeltaTime);
-            ////rb.rotation = rotate;
-            ////Vector3 targetDirection = rotationTarget.transform.position - transform.position;
-            //Vector3 newDirection = Vector3.RotateTowards(transform.forward, movement, 10 * Time.fixedDeltaTime, 100.0f);
-            //Debug.Log(movement);
-            ////transform.rotation = Quaternion.LookRotation(new Vector3(0,0, Mathf.Atan2(newDirection.y, newDirection.x) * Mathf.Rad2Deg - 90));
-            //transform.rotation = Quaternion.LookRotation(newDirection);
-
-            //var angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90;
-            //Quaternion something = Quaternion.AngleAxis(angle, Vector3.forward);
-            //Vector3 newRotation = Vector3.RotateTowards(transform.forward,new Vector3(0,0,something.eulerAngles.z), 100 * Time.deltaTime, 0.0f);
-            //Debug.Log(something.eulerAngles);
-            //// Draw a ray pointing at our target in
-            //Debug.DrawRay(transform.position, newRotation, Color.red);
-            //transform.rotation = Quaternion.LookRotation(newRotation);
 
             Quaternion targetRotation = Quaternion.LookRotation(movement, Vector3.back);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 4);
@@ -165,6 +135,7 @@ public class TankMovement : MonoBehaviour
                 break;
         }
     }
+
     public void GetHit(GameObject missile)
     {
         Vector2 pushbackDir = missile.transform.position  - transform.position;
