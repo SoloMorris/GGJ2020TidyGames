@@ -16,6 +16,7 @@ public class TankMovement : MonoBehaviour
 
     private string[] inputNames = new string[4];
     public int controllerInt;
+    [SerializeField] private ParticleSystem movementFX;
 
     [SerializeField]
     private CircuitBoard board;
@@ -23,6 +24,7 @@ public class TankMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        VFXManager.instance.AddParticleSystemToVFXList(movementFX, "moveTrails");
     }
 
     // Update is called once per frame

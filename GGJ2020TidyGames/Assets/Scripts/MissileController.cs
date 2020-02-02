@@ -53,7 +53,7 @@ public class MissileController : MonoBehaviour
 
     private void Explode()
     {
-        VFXManager.instance.PlayParticleSystemFromVFXList(gameObject, "bulletExplode", true);
+        VFXManager.instance.PlayParticleSystemFromVFXList(gameObject, "bulletExplode", true, true);
         ResetValues();
     }
     private void ResetValues()
