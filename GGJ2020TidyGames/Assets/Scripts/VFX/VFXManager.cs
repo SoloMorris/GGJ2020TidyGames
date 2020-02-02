@@ -126,7 +126,7 @@ public class VFXManager : MonoBehaviour
                 {
                     _vfx.target = _target;
                     _vfx.instance.SetActive(true);
-                    _vfx.instance.transform.rotation = _vfx.target.transform.rotation;
+                    _vfx.instance.transform.rotation = new Quaternion(_vfx.instance.transform.rotation.x, _vfx.instance.transform.rotation.y, _vfx.target.transform.rotation.z, _vfx.instance.transform.rotation.w);
                     _vfx.instance.transform.position = (_vfx.target.transform.InverseTransformPoint(_vfx.target.transform.position) + _offset);
                     _vfx.effect.Play();
                     return true;
@@ -194,7 +194,8 @@ public class VFXManager : MonoBehaviour
                 {
                     _vfx.target = _target;
                     _vfx.instance.SetActive(true);
-                    _vfx.instance.transform.rotation = Quaternion.Inverse(_vfx.target.transform.rotation);
+                    //_vfx.instance.transform.rotation = Quaternion.Inverse(_vfx.target.transform.rotation);
+                    _vfx.instance.transform.rotation = new Quaternion(_vfx.instance.transform.rotation.x, _vfx.instance.transform.rotation.y, _vfx.target.transform.rotation.z, _vfx.instance.transform.rotation.w);
                     _vfx.instance.transform.position = _vfx.target.transform.position;
                     _vfx.effect.Play();
                     return true;
@@ -230,6 +231,7 @@ public class VFXManager : MonoBehaviour
                 {
                     _vfx.target = _target;
                     _vfx.instance.SetActive(true);
+                    _vfx.instance.transform.rotation = new Quaternion(_vfx.instance.transform.rotation.x, _vfx.instance.transform.rotation.y, _vfx.target.transform.rotation.z, _vfx.instance.transform.rotation.w);
                     _vfx.instance.transform.position = _vfx.target.transform.position + _offset;
                     _vfx.effect.Play();
                     return true;
@@ -263,7 +265,9 @@ public class VFXManager : MonoBehaviour
                 {
                     _vfx.target = _target;
                     _vfx.instance.SetActive(true);
-                    _vfx.instance.transform.rotation = Quaternion.Inverse(_vfx.target.transform.rotation);
+                        //_vfx.instance.transform.rotation = Quaternion.Inverse(_vfx.target.transform.rotation);
+                        _vfx.instance.transform.rotation = new Quaternion(_vfx.instance.transform.rotation.x, _vfx.instance.transform.rotation.y, _vfx.target.transform.rotation.z, _vfx.instance.transform.rotation.w);
+
                     _vfx.instance.transform.position = (_vfx.target.transform.position + offset);
                     _vfx.effect.Play();
                     return true;
@@ -272,7 +276,7 @@ public class VFXManager : MonoBehaviour
         }
         return false;
     }
-    public void StopParticleSystem(string _name, GameObject _target)
+    public bool StopParticleSystem(string _name, GameObject _target)
     {
         foreach (VFX _vfx in vfxList)
         {
@@ -284,8 +288,10 @@ public class VFXManager : MonoBehaviour
                     _vfx.target = _vfx.instance;
                     _vfx.instance.transform.position = Vector3.zero;
                     _vfx.instance.SetActive(false);
+                    return true;
                 }
             }
         }
+        return false;
     }
 }

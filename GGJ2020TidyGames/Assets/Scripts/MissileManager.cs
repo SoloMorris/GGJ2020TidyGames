@@ -65,7 +65,7 @@ public class MissileManager : MonoBehaviour
                     _missile.GetComponent<MissileController>().direction = redTankBarrel.transform.up;
                     _missile.SetActive(true);
 
-                    VFXManager.instance.PlayParticleSystemFromVFXList(redSpawner, "fireBullet", true, (redTankBarrel.transform.up * 0.75f));
+                    VFXManager.instance.PlayParticleSystemFromVFXList(redSpawner, "fireBullet", true, true, (redTankBarrel.transform.up * 0.75f));
                     return true;
                 }
             }

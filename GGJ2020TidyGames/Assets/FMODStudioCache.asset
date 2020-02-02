@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8656148767575093542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &-8109682437611834794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +75,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637161812437296800
+  lastModified: 637161990365758558
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -127,6 +143,38 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-2342057918832357536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &-1933756406451464020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &-1926422907468147152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +195,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 8899675667109721858}
+  - {fileID: 1166115306499264289}
   MinDistance: 0
   MaxDistance: 0
   Length: 2300
@@ -196,7 +244,7 @@ MonoBehaviour:
   - {fileID: 1268117018668016813}
   MasterBankRef: {fileID: 1905267002875757942}
   StringsBankRef: {fileID: -6837045097921980395}
-  stringsBankWriteTime: 637161812437296800
+  stringsBankWriteTime: 637161990365758558
   cacheVersion: 2
 --- !u!114 &218799089546026804
 MonoBehaviour:
@@ -214,6 +262,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &611203136012075091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Accel
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &1021025726176826046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,6 +291,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Accel
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &1166115306499264289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
   Min: 0
   Max: 1
   Default: 0
@@ -250,7 +330,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 1021025726176826046}
+  - {fileID: 611203136012075091}
   MinDistance: 0
   MaxDistance: 0
   Length: 250
@@ -304,7 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: D:\GGJ2020TidyGames\GGJ2020TidyGames\Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 637161812437296800
+  lastModified: 637161990365768543
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -420,6 +500,22 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &5550172699050647643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Accel
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &6445668589984859318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,7 +572,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7610871150626387114}
+  - {fileID: -8656148767575093542}
   MinDistance: 0
   MaxDistance: 0
   Length: 1350
