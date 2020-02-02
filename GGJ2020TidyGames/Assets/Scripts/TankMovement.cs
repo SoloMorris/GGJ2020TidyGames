@@ -21,6 +21,11 @@ public class TankMovement : MonoBehaviour
     [SerializeField]
     private CircuitBoard board;
 
+    //AUDIO CODE
+    public string turretShootEvent = "";
+    FMOD.Studio.EventInstance turretShoot;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,12 +46,20 @@ public class TankMovement : MonoBehaviour
                 case 1:
                     if (MissileManager.instance.FireMissile("red"))
                     {
+                        //AUDIO CODE
+                        turretShoot = FMODUnity.RuntimeManager.CreateInstance(turretShootEvent);
+                        turretShoot.start();
+
                         board.DamageButton(button.RELOAD, 1);
                     }
                     break;
                 case 2:
                     if (MissileManager.instance.FireMissile("blue"))
                     {
+                        //AUDIO CODE
+                        turretShoot = FMODUnity.RuntimeManager.CreateInstance(turretShootEvent);
+                        turretShoot.start();
+
                         board.DamageButton(button.RELOAD, 1);
                     }
                     break;
