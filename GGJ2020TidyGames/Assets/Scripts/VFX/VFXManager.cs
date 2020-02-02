@@ -238,6 +238,39 @@ public class VFXManager : MonoBehaviour
         return false;
     }
 
+    public bool PlayParticleSystemFromVFXList(GameObject _target, string _vfxName, bool ignoreActiveEffects, bool inverseVFXRotation, Vector3 offset)
+    {
+        foreach (VFX _vfx in vfxList)
+        {
+            if (_vfx.name == _vfxName)
+            {
+                if (_vfx.target == _target)
+                {
+                    _vfx.instance.transform.position = (_vfx.target.transform.position + offset);
+                    if (!_vfx.effect.isPlaying)
+                    {
+                        StopParticleSystem(_vfxName, _target);
+                    }
+                    else if (!ignoreActiveEffects)
+                    {
+                        return false;
+                    }
+                }
+
+                //Checks if the vfx's target is itself -- i.e it's not used anywhere else
+                if (_vfx.target == _vfx.instance)
+                {
+                    _vfx.target = _target;
+                    _vfx.instance.SetActive(true);
+                    _vfx.instance.transform.rotation = Quaternion.Inverse(_vfx.target.transform.rotation);
+                    _vfx.instance.transform.position = (_vfx.target.transform.position + offset);
+                    _vfx.effect.Play();
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     public void StopParticleSystem(string _name, GameObject _target)
     {
         foreach (VFX _vfx in vfxList)
