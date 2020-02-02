@@ -19,7 +19,7 @@ public class SparkPlayer : MonoBehaviour
 {
     [SerializeField]
     private Tilemap tilemap;
-    private CircuitBoard board;
+    public CircuitBoard board;
 
     public Vector2Int maxPos;
     [SerializeField]
