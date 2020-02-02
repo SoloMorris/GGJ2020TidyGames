@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject coin;
 
-    private Vector2 scores = Vector2.zero;
+    public Vector2 scores = Vector2.zero;
 
     private List<int> players = new List<int>();
     private int[] characters;
