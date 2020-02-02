@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2897371123681194382}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,6 +58,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePuff: {fileID: 0}
+  Maps:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  coinSpawns:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  coin: {fileID: 0}
 --- !u!114 &2897371123681194382
 MonoBehaviour:
   m_ObjectHideFlags: 0
