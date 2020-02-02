@@ -80,21 +80,26 @@ public class SparkPlayer : MonoBehaviour
             if (tilemap.GetTile(posV3).name == "ATile")
             {
                 output = board.RepairButton(button.DASH);
-                repair.start();
+                //repair.start();
             }
             else if (tilemap.GetTile(posV3).name == "XTile")
             {
                 output = board.RepairButton(button.SHOOT);
-                repair.start();
+                //repair.start();
             }
             else if (tilemap.GetTile(posV3).name == "MoveTile")
             {
                 output = board.RepairButton(button.MOVEMENT);
-                repair.start();
+                //repair.start();
             }
             else if (tilemap.GetTile(posV3).name == "AmmoTile")
             {
                 output = board.RepairButton(button.RELOAD);
+                //repair.start();
+            }
+
+            if (output)
+            {
                 repair.start();
             }
         }

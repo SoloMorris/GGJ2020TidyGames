@@ -58,14 +58,14 @@ public class BarrelController : MonoBehaviour
             //AUDIO CODE
             if (turretTurnAudio < 2.0f)
             {
-                FMOD.Studio.PLAYBACK_STATE turret;
-                turretTurn.getPlaybackState(out turret);
-                if(turret != FMOD.Studio.PLAYBACK_STATE.PLAYING)
-                {
-                    turretTurn.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-                    turretTurn = FMODUnity.RuntimeManager.CreateInstance(turretTurnEvent);
-                    turretTurn.start();
-                }
+                //FMOD.Studio.PLAYBACK_STATE turret;
+                //turretTurn.getPlaybackState(out turret);
+                //if(turret != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+                //{
+                //    turretTurn.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                //    turretTurn = FMODUnity.RuntimeManager.CreateInstance(turretTurnEvent);
+                //    turretTurn.start();
+                //}
             }
 
         }
