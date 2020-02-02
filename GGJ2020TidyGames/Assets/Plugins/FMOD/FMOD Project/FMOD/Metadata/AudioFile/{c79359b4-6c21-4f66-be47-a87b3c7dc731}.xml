@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{c79359b4-6c21-4f66-be47-a87b3c7dc731}">
+        <property name="assetPath">
+            <value>SW001_8-Bit-Games-023_Explosion.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.30933333333333335</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{d2f748ac-53c3-4f7b-953d-b308472aae9b}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -96,7 +96,7 @@
     <object class="MixerBusPanner" id="{95715f48-8215-4ce9-9742-be742d2b04eb}"/>
     <object class="SingleSound" id="{88ab91c5-01a7-449f-9237-5762c6021ec3}">
         <property name="length">
-            <value>0.24999999999999989</value>
+            <value>0.35999999999999999</value>
         </property>
         <property name="timelockedOffset">
             <value>0.099999999999999867</value>
@@ -154,6 +154,7 @@
     <object class="MixerBusEffectChain" id="{9b813356-c872-4e46-b8ab-12a1dfd04e27}">
         <relationship name="effects">
             <destination>{b79246d2-165f-446b-8b47-9f44f72e3148}</destination>
+            <destination>{9db7c71b-e823-401c-a73a-4e7765443bc6}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{0fa28bd2-7013-4ae6-a8e3-26bc9938f089}"/>
@@ -173,18 +174,26 @@
             <value>1</value>
         </property>
         <property name="curveShape">
-            <value>-1.00000048</value>
+            <value>0.194555849</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{125ddb7d-80fa-43f7-9bee-b0dfdbda053f}">
         <property name="position">
-            <value>0.24999999999999978</value>
+            <value>0.35999999999999999</value>
         </property>
         <property name="value">
             <value>0</value>
         </property>
     </object>
     <object class="MixerBusFader" id="{b79246d2-165f-446b-8b47-9f44f72e3148}"/>
+    <object class="SFXReverbEffect" id="{9db7c71b-e823-401c-a73a-4e7765443bc6}">
+        <property name="wetLevel">
+            <value>-18.5</value>
+        </property>
+        <property name="dryLevel">
+            <value>-8.5</value>
+        </property>
+    </object>
     <object class="MixerBusFader" id="{3b23a7a5-6a3a-45e2-9073-6369be87b09f}"/>
     <object class="DistortionEffect" id="{b3cd43f7-977a-4119-beb0-3aabe0dc8cea}">
         <property name="level">

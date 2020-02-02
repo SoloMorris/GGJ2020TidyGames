@@ -141,7 +141,7 @@ public class GameManager : MonoBehaviour
     {
         roundTimer = 60;
         LoadMap(Random.Range(0,4));
-        SpawnCoin(1);
+        SpawnCoin(0);
     }
 
     private void LoadMap(int x)
@@ -153,9 +153,12 @@ public class GameManager : MonoBehaviour
 
     private void SpawnCoin(int location)
     {
-        GameObject newCoin = Instantiate(coin, coinSpawns[location].transform.position, Quaternion.Euler(Vector3.zero));
+        GameObject newCoin = Instantiate(coin, currentMap.transform);
+        newCoin.transform.localPosition = coinSpawns[location].position;
+        Debug.Log("coin location = " + coinSpawns[location].position);
         noCoin = false;
         coinLocation = location;
+        Debug.Log("coin spawned");
     }
 
     private void PlayerSelectUpdate()
@@ -272,23 +275,32 @@ public class GameManager : MonoBehaviour
 
     private void UIUpdate()
     {
-        for (int i = 0; i < 4; i++)
-        {
-            interfaces[i].SetActive(false);
-        }
 
         switch (state)
         {
             case gameState.MENU:
                 interfaces[(int)gameState.MENU].SetActive(true);
+                interfaces[(int)gameState.PLAYER_SELECT].SetActive(false);
+                interfaces[(int)gameState.GAME_PLAY].SetActive(false);
+                interfaces[(int)gameState.END_SCREEN].SetActive(false);
                 break;
             case gameState.PLAYER_SELECT:
+                interfaces[(int)gameState.MENU].SetActive(false);
                 interfaces[(int)gameState.PLAYER_SELECT].SetActive(true);
+                interfaces[(int)gameState.GAME_PLAY].SetActive(false);
+                interfaces[(int)gameState.END_SCREEN].SetActive(false);
                 break;
             case gameState.GAME_PLAY:
+                interfaces[(int)gameState.MENU].SetActive(false);
+                interfaces[(int)gameState.PLAYER_SELECT].SetActive(false);
                 interfaces[(int)gameState.GAME_PLAY].SetActive(true);
+                interfaces[(int)gameState.END_SCREEN].SetActive(false);
+                
                 break;
             case gameState.END_SCREEN:
+                interfaces[(int)gameState.MENU].SetActive(false);
+                interfaces[(int)gameState.PLAYER_SELECT].SetActive(false);
+                interfaces[(int)gameState.GAME_PLAY].SetActive(false);
                 interfaces[(int)gameState.END_SCREEN].SetActive(true);
                 break;
             default:
