@@ -58,6 +58,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePuff: {fileID: 0}
+  Maps:
+  - {fileID: 6426041817755353537, guid: dd029f888bc5c4b48b5c64a025eb976c, type: 3}
+  - {fileID: 7120556262816539653, guid: 1d94458ccc1a93f49b660f438d480038, type: 3}
+  - {fileID: 4119823822535672473, guid: fa4b8663bdec96c4c9f18f647d33ff20, type: 3}
+  - {fileID: 8802989592681917995, guid: 5787890c889a42442b8c3b09974b634a, type: 3}
+  - {fileID: 4143677047110545533, guid: b2521956ed6a574408fc4e9656beb3ef, type: 3}
+  mapSpawn: {fileID: 0}
+  noCoin: 0
+  interfaces:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  coin: {fileID: 8925830368027949965, guid: 745e4a70407206343a04df1956acbebb, type: 3}
+  units:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  tankSpawns:
+  - {fileID: 0}
+  - {fileID: 0}
+  state: 0
 --- !u!114 &2897371123681194382
 MonoBehaviour:
   m_ObjectHideFlags: 0
