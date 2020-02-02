@@ -30,7 +30,7 @@ public class VFXManager : MonoBehaviour
     {
         foreach (VFX item in vfxList)
         {
-            if (item.effect.isPlaying && item.target != item.instance)
+            if (!item.effect.isPlaying && item.target != item.instance)
             {
                 StopParticleSystem(item.name, item.target);
             }
@@ -43,7 +43,7 @@ public class VFXManager : MonoBehaviour
 
         newEffect.name = _name;
         newEffect.effect = Instantiate(_effect, transform);
-        newEffect.instance = _effect.gameObject;
+        newEffect.instance = newEffect.effect.gameObject;
         newEffect.target = newEffect.instance;
         newEffect.effect.Stop();
 
@@ -63,9 +63,9 @@ public class VFXManager : MonoBehaviour
             newEffect.instance = newEffect.effect.gameObject;
             newEffect.target = newEffect.instance;
             newEffect.effect.Stop();
-            newEffect.instance.SetActive(false);
 
             vfxList.Add(newEffect);
+            vfxList[vfxList.Count - 1].instance.SetActive(false);
             Debug.Log("Particle system " + vfxList[vfxList.Count - 1].name + " added!");
         }
     }
@@ -94,7 +94,7 @@ public class VFXManager : MonoBehaviour
                     _vfx.target = _target;
                     _vfx.instance.SetActive(true);
                     _vfx.instance.transform.rotation = _vfx.target.transform.rotation;
-                    _vfx.instance.transform.position = _vfx.target.transform.position;
+                    _vfx.instance.transform.position = _vfx.target.transform.InverseTransformPoint(_vfx.target.transform.position);
                     _vfx.effect.Play();
                     return true;
                 }
@@ -127,7 +127,7 @@ public class VFXManager : MonoBehaviour
                     _vfx.target = _target;
                     _vfx.instance.SetActive(true);
                     _vfx.instance.transform.rotation = _vfx.target.transform.rotation;
-                    _vfx.instance.transform.position = _vfx.target.transform.position + _offset;
+                    _vfx.instance.transform.position = (_vfx.target.transform.InverseTransformPoint(_vfx.target.transform.position) + _offset);
                     _vfx.effect.Play();
                     return true;
                 }
@@ -211,6 +211,7 @@ public class VFXManager : MonoBehaviour
         {
             if (_vfx.name == _vfxName)
             {
+                print("Found tank " + _target.name);
                 if (_vfx.target == _target)
                 {
                     _vfx.instance.transform.position = _target.transform.position + _offset;
