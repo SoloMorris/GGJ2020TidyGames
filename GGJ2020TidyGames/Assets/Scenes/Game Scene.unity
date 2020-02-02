@@ -12960,6 +12960,35 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 998437599}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1202295190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1383410945051905653, guid: bebfcb14fec2487419a1c03373f7f795,
+    type: 3}
+  m_PrefabInstance: {fileID: 1619991160}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1202295191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202295190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/GameplayTank/Tank/Movement
+  PlayEvent: 1
+  StopEvent: 2
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1001 &1215838607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13080,6 +13109,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 268577153202828124, guid: 33ec934a3e676ca4e848a7a6a2cbde4e,
+        type: 3}
+      propertyPath: turretTurnEvent
+      value: event:/GameplayTank/Tank/Turning
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ec934a3e676ca4e848a7a6a2cbde4e, type: 3}
@@ -13488,6 +13522,11 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 4177724}
+    - target: {fileID: 1383410945051905650, guid: bebfcb14fec2487419a1c03373f7f795,
+        type: 3}
+      propertyPath: turretShootEvent
+      value: event:/GameplayTank/Tank/Shoot
+      objectReference: {fileID: 0}
     - target: {fileID: 1383410945949595822, guid: bebfcb14fec2487419a1c03373f7f795,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13543,8 +13582,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1383410945891592325, guid: bebfcb14fec2487419a1c03373f7f795,
+        type: 3}
+      propertyPath: turretTurnEvent
+      value: event:/GameplayTank/Tank/Turning
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bebfcb14fec2487419a1c03373f7f795, type: 3}
+--- !u!1 &1716407593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 268577153338325155, guid: 33ec934a3e676ca4e848a7a6a2cbde4e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1215838607}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1716407600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716407593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/GameplayTank/Tank/Movement
+  PlayEvent: 1
+  StopEvent: 2
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1776022580
 GameObject:
   m_ObjectHideFlags: 0
