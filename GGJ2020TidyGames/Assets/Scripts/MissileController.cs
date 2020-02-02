@@ -26,20 +26,28 @@ public class MissileController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("Hit something");
-        if (collision.collider.CompareTag(target))
-        {
-            Debug.Log("Hit " + target +" tank!");
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Debug.Log("Hit something");
+    //    if (collision.gameObject.CompareTag(target))
+    //    {
+    //        Debug.Log("Hit " + target +" tank!");
+    //    }
+    //}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Obstacles"))
         {
             Explode();
+        }
+
+        if (collision.gameObject.CompareTag(target))
+        {
+            Debug.Log("Hit " + target + " tank!");
+            collision.gameObject.GetComponent<TankMovement>().GetHit(this.gameObject);
+            Explode();
+
         }
     }
 

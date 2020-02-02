@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum button
 {
@@ -24,13 +25,15 @@ public class CircuitBoard : MonoBehaviour
     [SerializeField]
     private float[] damageDelay = new float[4];
 
+    public Slider[] displays = new Slider[4];
+
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < 4; i++)
         {
             buttonHealth[i] = maxCounts[i];
-            //buttonHealth[i] = 0;
+            displays[i].maxValue = maxCounts[i];
             lastDamageTick[i] = 0;
         }
     }
@@ -39,11 +42,20 @@ public class CircuitBoard : MonoBehaviour
     void Update()
     {
         AliveUpdate();
+        DisplayUpdate();
     }
 
     private void FixedUpdate()
     {
         DamageOverTime();
+    }
+
+    public void DisplayUpdate()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            displays[i].value = buttonHealth[i];
+        }
     }
 
     public void AliveUpdate()
@@ -96,5 +108,10 @@ public class CircuitBoard : MonoBehaviour
                 lastDamageTick[i] = Time.time;
             }
         }
+    }
+
+    public bool CheckButton(button target)
+    {
+        return buttonAlive[(int)target];
     }
 }

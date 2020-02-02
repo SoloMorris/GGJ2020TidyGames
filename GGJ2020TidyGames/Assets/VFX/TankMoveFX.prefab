@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1488945033302955091}
   - component: {fileID: 1488945033302955088}
   - component: {fileID: 1488945033302955089}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TankMoveFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}

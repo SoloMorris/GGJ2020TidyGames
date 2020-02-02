@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Circuit_Board
   - Obstacles
+  - TankRed
+  - TankBlue
+  - red
+  - blue
   layers:
   - Default
   - TransparentFX
@@ -17,7 +21,7 @@ TagManager:
   - 
   - CB1
   - CB2
-  - 
+  - TankGame
   - 
   - 
   - 

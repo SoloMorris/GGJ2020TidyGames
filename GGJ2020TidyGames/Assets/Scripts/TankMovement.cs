@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class TankMovement : MonoBehaviour
 {
-
-    float movementSpeed = 2f;
+    [SerializeField]
+    [Range(0f, 20000f)]
+    private float movementSpeed = 2f;
 
     public Rigidbody2D rb;
 
@@ -17,55 +18,62 @@ public class TankMovement : MonoBehaviour
     public int controllerInt;
     [SerializeField] private ParticleSystem movementFX;
 
+    [SerializeField]
+    private CircuitBoard board;
+
     // Start is called before the first frame update
     void Start()
     {
         VFXManager.instance.AddParticleSystemToVFXList(movementFX, "moveTrails");
-        UpdateControls();
     }
 
     // Update is called once per frame
     void Update()
     {
+        UpdateControls();
         movement.x = GetInputs(controllerInt, input.RIGHT);
         movement.y = GetInputs(controllerInt, input.UP);
+
+        if (GetInputs(controllerInt, input.X) == 1 && board.CheckButton(button.SHOOT) && board.CheckButton(button.RELOAD))
+        {
+            switch (controllerInt)
+            {
+                case 1:
+                    if (MissileManager.instance.FireMissile("red"))
+                    {
+                        board.DamageButton(button.RELOAD, 1);
+                    }
+                    break;
+                case 2:
+                    if (MissileManager.instance.FireMissile("blue"))
+                    {
+                        board.DamageButton(button.RELOAD, 1);
+                    }
+                    break;
+                default:
+                    break;
+            }
+
+        }
+
+        if (GetInputs(controllerInt, input.A) == 1 && board.CheckButton(button.DASH))
+        {
+            rb.AddRelativeForce(Vector2.up * movementSpeed / 2 * Time.deltaTime, ForceMode2D.Impulse);
+            board.DamageButton(button.DASH, 1);
+        }
     }
 
     private void FixedUpdate()
     {
-        if (movement.magnitude > 0.0f)
+        if (movement.magnitude > 0.0f && board.CheckButton(button.MOVEMENT))
         {
-            //rb.MovePosition(rb.position + Vector2.up * movementSpeed * Time.fixedDeltaTime);
-            rb.AddRelativeForce(Vector2.up * 10f, ForceMode2D.Force);
-            VFXManager.instance.PlayParticleSystemFromVFXList(gameObject, "moveTrails", true);
-
-
-
-        }
-        if (movement.magnitude > 0.0f)
-        {
-            //angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90;
-            ////float rotate = Mathf.Lerp(rb.rotation, angle, 0.8f *Time.fixedDeltaTime);
-            ////rb.rotation = rotate;
-            ////Vector3 targetDirection = rotationTarget.transform.position - transform.position;
-            //Vector3 newDirection = Vector3.RotateTowards(transform.forward, movement, 10 * Time.fixedDeltaTime, 100.0f);
-            //Debug.Log(movement);
-            ////transform.rotation = Quaternion.LookRotation(new Vector3(0,0, Mathf.Atan2(newDirection.y, newDirection.x) * Mathf.Rad2Deg - 90));
-            //transform.rotation = Quaternion.LookRotation(newDirection);
-
-            //var angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90;
-            //Quaternion something = Quaternion.AngleAxis(angle, Vector3.forward);
-            //Vector3 newRotation = Vector3.RotateTowards(transform.forward,new Vector3(0,0,something.eulerAngles.z), 100 * Time.deltaTime, 0.0f);
-            //Debug.Log(something.eulerAngles);
-            //// Draw a ray pointing at our target in
-            //Debug.DrawRay(transform.position, newRotation, Color.red);
-            //transform.rotation = Quaternion.LookRotation(newRotation);
+            rb.AddRelativeForce(Vector2.up * movementSpeed * Time.deltaTime, ForceMode2D.Force);
 
             Quaternion targetRotation = Quaternion.LookRotation(movement, Vector3.back);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 4);
             transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
         }
-        
+
     }
 
     private float GetInputs(int controllerInt, input inputType)
@@ -127,6 +135,22 @@ public class TankMovement : MonoBehaviour
                 inputNames[2] = "AFour";
                 inputNames[3] = "XFour";
                 break;
+        }
+    }
+
+    public void GetHit(GameObject missile)
+    {
+        Vector2 pushbackDir = missile.transform.position  - transform.position;
+        pushbackDir.Normalize();
+        rb.AddForce(-pushbackDir * movementSpeed / 4 * Time.deltaTime, ForceMode2D.Impulse);
+        board.DamageButton(button.MOVEMENT, 10);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("coin"))
+        {
+            Destroy(collision.gameObject);
         }
     }
 }

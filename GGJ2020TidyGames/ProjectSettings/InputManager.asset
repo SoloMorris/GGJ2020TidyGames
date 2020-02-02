@@ -218,12 +218,12 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 0
+    positiveButton: joystick 1 button 0
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 1
+    gravity: 1000
     dead: 0.001
-    sensitivity: 1
+    sensitivity: 1000
     snap: 0
     invert: 0
     type: 0
@@ -234,48 +234,48 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 0
+    positiveButton: joystick 2 button 0
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 1
+    gravity: 1000
     dead: 0.001
-    sensitivity: 1
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: XOne
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick 1 button 2
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
     snap: 0
     invert: 0
     type: 0
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: XOne
-    descriptiveName: 
-    descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
-    altNegativeButton: 
-    altPositiveButton: 
-    gravity: 0
-    dead: 0.5
-    sensitivity: 1
-    snap: 0
-    invert: 0
-    type: 2
-    axis: 3
-    joyNum: 1
-  - serializedVersion: 3
     m_Name: XTwo
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: 
+    positiveButton: joystick 2 button 2
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 0
-    dead: 0.5
-    sensitivity: 1
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
     snap: 0
     invert: 0
-    type: 2
-    axis: 3
+    type: 0
+    axis: 0
     joyNum: 2
   - serializedVersion: 3
     m_Name: AimHorizontalOne
