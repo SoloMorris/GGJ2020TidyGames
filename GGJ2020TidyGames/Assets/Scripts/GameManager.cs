@@ -8,11 +8,11 @@ public enum gameState
 {
     MENU = 0,
     PLAYER_SELECT = 1,
-    GAME_PLAY = 3,
-    END_SCREEN = 4,
+    GAME_PLAY = 2,
+    END_SCREEN = 3,
 }
 
-public enum characters
+public enum unit
 {
     RED_TANK = 0,
     BLU_TANK = 1,
@@ -27,8 +27,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] ParticleSystem firePuff;
 
     public GameObject[] Maps = new GameObject[5];
+    public Transform mapSpawn;
+    private GameObject currentMap;
 
-    public Transform[] coinSpawns = new Transform[5];
+    private Transform[] coinSpawns = new Transform[5];
     public bool noCoin = false;
     private int coinLocation;
 
@@ -43,22 +45,27 @@ public class GameManager : MonoBehaviour
     private int[] characters;
     public GameObject[] units = new GameObject[4];
 
+    public Transform[] tankSpawns = new Transform[2];
+
     public gameState state;
 
-    public int controllerInt;
     private string[] inputNames = new string[4];
 
+    [SerializeField]
     private float roundTimer;
 
     void Start()
     {
         state = gameState.MENU;
+        roundTimer = -99;
     }
 
     // Update is called once per frame
     void Update()
     {
         UIUpdate();
+
+        Debug.Log(state);
 
         switch (state)
         {
@@ -87,6 +94,15 @@ public class GameManager : MonoBehaviour
             {
                 state = gameState.MENU;
                 players.Clear();
+                units[(int)unit.RED_TANK].transform.position = tankSpawns[0].position;
+                units[(int)unit.BLU_TANK].transform.position = tankSpawns[1].position;
+                units[(int)unit.RED_TANK].transform.rotation = tankSpawns[1].rotation;
+                units[(int)unit.BLU_TANK].transform.rotation = tankSpawns[0].rotation;
+
+                units[(int)unit.RED_CB].GetComponent<SparkPlayer>().SetCurrentPos(6,6);
+                units[(int)unit.BLU_CB].GetComponent<SparkPlayer>().SetCurrentPos(6,6);
+
+                Destroy(currentMap);
             }
         }
     }
@@ -116,24 +132,28 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            roundTimer = -99;
             state = gameState.END_SCREEN;
         }
-    }
-
-    private void GameEnd()
-    {
-        roundTimer = -99;
     }
 
     private void GameStart()
     {
         roundTimer = 60;
+        LoadMap(Random.Range(0,4));
         SpawnCoin(1);
+    }
+
+    private void LoadMap(int x)
+    {
+        GameObject newMap = Instantiate(Maps[x], mapSpawn);
+        coinSpawns = Maps[x].GetComponent<Mappy>().coinSpawns;
+        currentMap = newMap;
     }
 
     private void SpawnCoin(int location)
     {
-        GameObject newCoin = Instantiate(coin, coinSpawns[location]);
+        GameObject newCoin = Instantiate(coin, coinSpawns[location].transform.position, Quaternion.Euler(Vector3.zero));
         noCoin = false;
         coinLocation = location;
     }
@@ -164,7 +184,8 @@ public class GameManager : MonoBehaviour
         {
             if (GetInputs(i, input.A))
             {
-                state = gameState.PLAYER_SELECT;
+                state = gameState.GAME_PLAY;
+                //state = gameState.PLAYER_SELECT;
             }
         }
     }

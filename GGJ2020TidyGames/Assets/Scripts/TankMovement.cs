@@ -21,32 +21,48 @@ public class TankMovement : MonoBehaviour
     [SerializeField]
     private CircuitBoard board;
 
+    private GameManager gm;
+
+    //AUDIO CODE
+    public string turretShootEvent = "";
+    FMOD.Studio.EventInstance turretShoot;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        gm = FindObjectOfType<GameManager>();
         VFXManager.instance.AddParticleSystemToVFXList(movementFX, "moveTrails");
     }
 
     // Update is called once per frame
     void Update()
     {
-        UpdateControls();
-        movement.x = GetInputs(controllerInt, input.RIGHT);
-        movement.y = GetInputs(controllerInt, input.UP);
-
-        if (GetInputs(controllerInt, input.X) == 1 && board.CheckButton(button.SHOOT) && board.CheckButton(button.RELOAD))
+        if (gm.state == gameState.GAME_PLAY)
         {
-            switch (controllerInt)
+            UpdateControls();
+            movement.x = GetInputs(controllerInt, input.RIGHT);
+            movement.y = GetInputs(controllerInt, input.UP);
+
+            if (GetInputs(controllerInt, input.X) == 1 && board.CheckButton(button.SHOOT) && board.CheckButton(button.RELOAD))
             {
                 case 1:
                     if (MissileManager.instance.FireMissile("red"))
                     {
+                        //AUDIO CODE
+                        turretShoot = FMODUnity.RuntimeManager.CreateInstance(turretShootEvent);
+                        turretShoot.start();
+
                         board.DamageButton(button.RELOAD, 1);
                     }
                     break;
                 case 2:
                     if (MissileManager.instance.FireMissile("blue"))
                     {
+                        //AUDIO CODE
+                        turretShoot = FMODUnity.RuntimeManager.CreateInstance(turretShootEvent);
+                        turretShoot.start();
+
                         board.DamageButton(button.RELOAD, 1);
                     }
                     break;
@@ -54,24 +70,26 @@ public class TankMovement : MonoBehaviour
                     break;
             }
 
-        }
-
-        if (GetInputs(controllerInt, input.A) == 1 && board.CheckButton(button.DASH))
-        {
-            rb.AddRelativeForce(Vector2.up * movementSpeed / 2 * Time.deltaTime, ForceMode2D.Impulse);
-            board.DamageButton(button.DASH, 1);
+            if (GetInputs(controllerInt, input.A) == 1 && board.CheckButton(button.DASH))
+            {
+                rb.AddRelativeForce(Vector2.up * movementSpeed / 2 * Time.deltaTime, ForceMode2D.Impulse);
+                board.DamageButton(button.DASH, 1);
+            }
         }
     }
 
     private void FixedUpdate()
     {
-        if (movement.magnitude > 0.0f && board.CheckButton(button.MOVEMENT))
+        if (gm.state == gameState.GAME_PLAY)
         {
-            rb.AddRelativeForce(Vector2.up * movementSpeed * Time.deltaTime, ForceMode2D.Force);
+            if (movement.magnitude > 0.0f && board.CheckButton(button.MOVEMENT))
+            {
+                rb.AddRelativeForce(Vector2.up * movementSpeed * Time.deltaTime, ForceMode2D.Force);
 
-            Quaternion targetRotation = Quaternion.LookRotation(movement, Vector3.back);
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 4);
-            transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
+                Quaternion targetRotation = Quaternion.LookRotation(movement, Vector3.back);
+                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 4);
+                transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
+            }
         }
 
     }
