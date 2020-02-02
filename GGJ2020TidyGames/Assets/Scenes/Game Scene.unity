@@ -139,11 +139,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2897371123681194370, guid: 852f8b80b893ccc47a7c23c22b144e65,
-        type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
     - target: {fileID: 2897371123681194368, guid: 852f8b80b893ccc47a7c23c22b144e65,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -199,6 +194,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2897371123681194370, guid: 852f8b80b893ccc47a7c23c22b144e65,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
     - target: {fileID: 2897371123681194382, guid: 852f8b80b893ccc47a7c23c22b144e65,
         type: 3}
       propertyPath: redTankBarrel
@@ -218,7 +218,7 @@ PrefabInstance:
         type: 3}
       propertyPath: blueSpawner
       value: 
-      objectReference: {fileID: 1991650210}
+      objectReference: {fileID: 0}
     - target: {fileID: 2897371123681194382, guid: 852f8b80b893ccc47a7c23c22b144e65,
         type: 3}
       propertyPath: blueMissile
@@ -586,6 +586,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3603979166804285075, guid: 676066601d8b9c5489aaca2d51d2dd0a,
+        type: 3}
+      propertyPath: damageDelay.Array.data[2]
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603979166804285075, guid: 676066601d8b9c5489aaca2d51d2dd0a,
+        type: 3}
+      propertyPath: damageDelay.Array.data[3]
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3603979166842597137, guid: 676066601d8b9c5489aaca2d51d2dd0a,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -822,16 +832,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6426041817755353537, guid: dd029f888bc5c4b48b5c64a025eb976c,
-        type: 3}
-      propertyPath: m_Name
-      value: Map1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6426041817755353537, guid: dd029f888bc5c4b48b5c64a025eb976c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4613515028586500773, guid: dd029f888bc5c4b48b5c64a025eb976c,
         type: 3}
       propertyPath: m_Layer
@@ -853,6 +853,16 @@ PrefabInstance:
       value: Obstacles
       objectReference: {fileID: 0}
     - target: {fileID: 6426041817523281326, guid: dd029f888bc5c4b48b5c64a025eb976c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426041817755353537, guid: dd029f888bc5c4b48b5c64a025eb976c,
+        type: 3}
+      propertyPath: m_Name
+      value: Map1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426041817755353537, guid: dd029f888bc5c4b48b5c64a025eb976c,
         type: 3}
       propertyPath: m_Layer
       value: 10
@@ -3478,15 +3488,35 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 4177724}
-    - target: {fileID: 1383410945949595821, guid: bebfcb14fec2487419a1c03373f7f795,
+    - target: {fileID: 1383410945891592325, guid: bebfcb14fec2487419a1c03373f7f795,
         type: 3}
-      propertyPath: m_Name
-      value: PlayerBlue
+      propertyPath: firepoint
+      value: 
+      objectReference: {fileID: 1457983539}
+    - target: {fileID: 1383410945891592325, guid: bebfcb14fec2487419a1c03373f7f795,
+        type: 3}
+      propertyPath: controllerInt
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383410945891592326, guid: bebfcb14fec2487419a1c03373f7f795,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383410945891592326, guid: bebfcb14fec2487419a1c03373f7f795,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1383410945891592347, guid: bebfcb14fec2487419a1c03373f7f795,
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383410945949595821, guid: bebfcb14fec2487419a1c03373f7f795,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerBlue
       objectReference: {fileID: 0}
     - target: {fileID: 1383410945949595822, guid: bebfcb14fec2487419a1c03373f7f795,
         type: 3}
@@ -3542,26 +3572,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1383410945891592326, guid: bebfcb14fec2487419a1c03373f7f795,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1383410945891592326, guid: bebfcb14fec2487419a1c03373f7f795,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1383410945891592325, guid: bebfcb14fec2487419a1c03373f7f795,
-        type: 3}
-      propertyPath: firepoint
-      value: 
-      objectReference: {fileID: 1457983539}
-    - target: {fileID: 1383410945891592325, guid: bebfcb14fec2487419a1c03373f7f795,
-        type: 3}
-      propertyPath: controllerInt
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bebfcb14fec2487419a1c03373f7f795, type: 3}
@@ -3737,12 +3747,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f24899574f959b4d892fee2da6b6f2b, type: 3}
---- !u!1 &1991650210 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5366516638555162070, guid: bebfcb14fec2487419a1c03373f7f795,
-    type: 3}
-  m_PrefabInstance: {fileID: 1619991160}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2062650948
 GameObject:
   m_ObjectHideFlags: 0
