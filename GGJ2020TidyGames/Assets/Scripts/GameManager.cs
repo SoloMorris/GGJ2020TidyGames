@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public enum gameState
@@ -50,6 +52,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private float roundTimer;
+
+    public TextMeshPro timerDisplay;
 
     void Start()
     {
@@ -124,6 +128,9 @@ public class GameManager : MonoBehaviour
 
                 SpawnCoin(spawn);
             }
+            string[] x;
+            x = roundTimer.ToString().Split('.');
+            timerDisplay.text = x[0];
         }
         else
         {
@@ -169,6 +176,11 @@ public class GameManager : MonoBehaviour
                 characters[2] = players[2];
                 characters[3] = players[3];
                 characters[4] = players[4];
+
+                units[(int)unit.RED_TANK].GetComponent<TankMovement>().controllerInt = characters[1];
+                units[(int)unit.BLU_TANK].GetComponent<TankMovement>().controllerInt = characters[2];
+                units[(int)unit.RED_CB].GetComponent<TankMovement>().controllerInt = characters[3];
+                units[(int)unit.BLU_CB].GetComponent<TankMovement>().controllerInt = characters[4];
                 state = gameState.GAME_PLAY;
             }
         }

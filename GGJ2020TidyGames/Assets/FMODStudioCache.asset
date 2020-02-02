@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/GameplayTank/Tank/Shoot
   guid: c9bb256ac1977d4d9ca34a7e0691858a
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
   Path: event:/GameplayTank/Environment/GameMusic
   guid: 736b9c45c379114686054f5e47d47d71
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -61,7 +61,7 @@ MonoBehaviour:
   Path: event:/GameplayRepairer/Spark/Repair
   guid: 4829f24c8d2f7345913f239b4aa63d82
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -84,7 +84,7 @@ MonoBehaviour:
   Path: event:/GameplayRepairer/Spark/SparkMovement
   guid: df396a85da0ace4a9156c8467a9f6591
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   Path: event:/GameplayTank/Gameplay Sounds/Win
   guid: 0f1bcdfc9a9ffe40b1eaa84b7abc2ebe
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -131,7 +131,7 @@ MonoBehaviour:
   Path: event:/GameplayTank/Tank/Hit
   guid: 977c96066cfabc41ae8909cde55b459f
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -186,7 +186,7 @@ MonoBehaviour:
   Path: event:/GameplayTank/Tank/Movement
   guid: 461634ab1d90e248b410c2aaa2b327fb
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
   Path: event:/GameplayTank/Gameplay Sounds/Die
   guid: 988ca1b8f4be5f4ba28d5ec6764adc02
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -233,7 +233,7 @@ MonoBehaviour:
   Path: event:/GameplayTank/Tank/EngineHum
   guid: 8343c46652e04c45844c5564528b44a7
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 7533665029007549808}
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   EditorEvents:
   - {fileID: -6669064785083454275}
   - {fileID: 5734924397715732179}
@@ -270,7 +270,7 @@ MonoBehaviour:
   - {fileID: 7321204088843493999}
   - {fileID: -8056620359515808752}
   - {fileID: -6739791347364086844}
-  MasterBankRef: {fileID: 822817869358623292}
+  MasterBankRef: {fileID: 1681009871339279357}
   StringsBankRef: {fileID: 7533665029007549808}
   stringsBankWriteTime: 637162511276049254
   cacheVersion: 2
@@ -310,6 +310,26 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &1681009871339279357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Quinn\OneDrive\Documents\Unity\GGJ2020TidyGames\GGJ2020TidyGames\Assets\Plugins\FMOD\FMOD
+    Project\FMOD\Build\Desktop\Master Bank.bank
+  lastModified: 637162496415941324
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 182368
+  Exists: 1
 --- !u!114 &3686160974464480818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,7 +345,7 @@ MonoBehaviour:
   Path: event:/GameplayTank/Gameplay Sounds/MenuMusic
   guid: 7649f2f4521f52498066482f218fffe3
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -348,7 +368,7 @@ MonoBehaviour:
   Path: event:/GameplayRepairer/Spark/Break
   guid: 554c8ec6d3e03545bcdfd26c9ae610be
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -387,7 +407,7 @@ MonoBehaviour:
   Path: event:/GameplayTank/Tank/HitWall
   guid: 177a6a7fdcd2c34690a0a462526c23c2
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -410,7 +430,7 @@ MonoBehaviour:
   Path: event:/GameplayTank/Tank/Turning
   guid: bbc347438f0ff74688657b35cf57b867
   Banks:
-  - {fileID: 822817869358623292}
+  - {fileID: 1681009871339279357}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
