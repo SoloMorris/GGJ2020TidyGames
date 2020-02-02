@@ -375,14 +375,12 @@ PrefabInstance:
         type: 3}
       propertyPath: interfaces.Array.data[4]
       value: 
-      objectReference: {fileID: 9067482081689776392, guid: 189ebe0df1bb0af4abf77f6fd69753c9,
-        type: 3}
+      objectReference: {fileID: 377302904}
     - target: {fileID: 2897371123681194383, guid: 852f8b80b893ccc47a7c23c22b144e65,
         type: 3}
       propertyPath: interfaces.Array.data[5]
       value: 
-      objectReference: {fileID: 9067482081689776392, guid: 796adc885694e4a44bb942863e83510f,
-        type: 3}
+      objectReference: {fileID: 1446665572}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 852f8b80b893ccc47a7c23c22b144e65, type: 3}
 --- !u!1 &80738688
@@ -872,6 +870,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 9.001, y: 0, z: 0}
+--- !u!1 &377302904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9067482081689776392, guid: 189ebe0df1bb0af4abf77f6fd69753c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2796682977439788137}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &403662034
 GameObject:
   m_ObjectHideFlags: 0
@@ -12200,6 +12204,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 566122729}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1446665572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9067482081689776392, guid: 796adc885694e4a44bb942863e83510f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4728462248225178517}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1457983539 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5366516638555162070, guid: bebfcb14fec2487419a1c03373f7f795,
@@ -12491,7 +12501,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1591893568
 MonoBehaviour:
@@ -12990,7 +13000,7 @@ PrefabInstance:
     - target: {fileID: 1131190908177689803, guid: 0f24899574f959b4d892fee2da6b6f2b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1131190908177689803, guid: 0f24899574f959b4d892fee2da6b6f2b,
         type: 3}
@@ -13341,6 +13351,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinnerSparkleFXL
       objectReference: {fileID: 0}
+    - target: {fileID: 9067482081689776392, guid: 189ebe0df1bb0af4abf77f6fd69753c9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4478160154631748378, guid: 189ebe0df1bb0af4abf77f6fd69753c9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13524,6 +13539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WinnerSparkleFXR 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067482081689776392, guid: 796adc885694e4a44bb942863e83510f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4478160154631748378, guid: 796adc885694e4a44bb942863e83510f,
         type: 3}
