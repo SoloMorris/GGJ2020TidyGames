@@ -46,28 +46,35 @@ public class TankMovement : MonoBehaviour
 
             if (GetInputs(controllerInt, input.X) == 1 && board.CheckButton(button.SHOOT) && board.CheckButton(button.RELOAD))
             {
-                case 1:
-                    if (MissileManager.instance.FireMissile("red"))
-                    {
-                        //AUDIO CODE
-                        turretShoot = FMODUnity.RuntimeManager.CreateInstance(turretShootEvent);
-                        turretShoot.start();
+                switch (controllerInt)
+                {
+                    case 1:
+                        {
+                            if (MissileManager.instance.FireMissile("red"))
+                            {
+                                //AUDIO CODE
+                                turretShoot = FMODUnity.RuntimeManager.CreateInstance(turretShootEvent);
+                                turretShoot.start();
 
-                        board.DamageButton(button.RELOAD, 1);
-                    }
-                    break;
-                case 2:
-                    if (MissileManager.instance.FireMissile("blue"))
-                    {
-                        //AUDIO CODE
-                        turretShoot = FMODUnity.RuntimeManager.CreateInstance(turretShootEvent);
-                        turretShoot.start();
+                                board.DamageButton(button.RELOAD, 1);
+                            }
+                        }
+                        break;
+                    case 2:
+                        {
+                            if (MissileManager.instance.FireMissile("blue"))
+                            {
+                                //AUDIO CODE
+                                turretShoot = FMODUnity.RuntimeManager.CreateInstance(turretShootEvent);
+                                turretShoot.start();
 
-                        board.DamageButton(button.RELOAD, 1);
-                    }
-                    break;
-                default:
-                    break;
+                                board.DamageButton(button.RELOAD, 1);
+                            }
+                        }
+                        break;
+                    default:
+                        break;
+                }
             }
 
             if (GetInputs(controllerInt, input.A) == 1 && board.CheckButton(button.DASH))
@@ -171,4 +178,5 @@ public class TankMovement : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-}
+
+    }

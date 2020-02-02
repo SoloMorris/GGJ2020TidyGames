@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000240AE660F38 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001FB5121F918 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -23,40 +23,40 @@
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 101472
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 24064
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 150688
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26208
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000006F4EC5F27C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000075C13EF5C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA5E04D9C0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA5E04D990
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA5E04DA90
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA5E04DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000240A0343178
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='toy_plastic_cogs_turn.4', format=2, channels=1, frequency=48000, lengthbytes=2528, lengthpcm=12000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.289093.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 101472
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 24064
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000006F4EC5F27C
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA5E04D9C0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA5E04D990
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA5E04DA90
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA5E04DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000240B0660578
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8AA7ED9C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8AA7ED990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8AA7EDA90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8AA7EDB50
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FB65273E28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Servo Motor M stressed_04', format=2, channels=2, frequency=48000, lengthbytes=5440, lengthpcm=20992, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.276156.
-[LOG] SoundI::release                          :  (00000240C5EB3B38)
-[LOG] SoundI::release                          :     toy_plastic_cogs_turn.4 (00000240C5A78A68)
-[LOG] SoundI::release                          :  (00000240C5EB4F58)
-[LOG] SoundI::release                          :     Servo Motor M stressed_04 (00000240C5A7A128)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 150688
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26208
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000075C13EF5C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8AA7ED9C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8AA7ED990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8AA7EDA90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8AA7EDB50
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FB656D44D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wok Top HiVel 6', format=2, channels=1, frequency=48000, lengthbytes=41792, lengthpcm=387600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.547721.
+[LOG] SoundI::release                          :  (000001FB53C68408)
+[LOG] SoundI::release                          :     Wok Top HiVel 6 (000001FB5074ACC8)
+[LOG] SoundI::release                          :  (000001FB34C170A8)
+[LOG] SoundI::release                          :     Servo Motor M stressed_04 (000001FB50747DA8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
