@@ -167,7 +167,8 @@ public class TankMovement : MonoBehaviour
     }
     public void GetHit(GameObject missile)
     {
-        Vector2 pushbackDir = transform.position - missile.transform.position;
-        rb.AddForce(pushbackDir * movementSpeed / 8 * Time.deltaTime, ForceMode2D.Impulse);
+        Vector2 pushbackDir = missile.transform.position  - transform.position;
+        pushbackDir.Normalize();
+        rb.AddForce(-pushbackDir * movementSpeed / 4 * Time.deltaTime, ForceMode2D.Impulse);
     }
 }

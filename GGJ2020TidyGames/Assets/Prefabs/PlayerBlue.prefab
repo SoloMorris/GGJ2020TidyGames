@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1383410945051905650}
   m_Layer: 10
   m_Name: TankBodyBlue
-  m_TagString: Untagged
+  m_TagString: TankBlue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251,8 +251,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -271,11 +271,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1383410945891592326}
-  firepoint: {fileID: 0}
+  firepoint: {fileID: 5366516638555162070}
   tankBody: {fileID: 1383410945051905653}
   aim: {x: 0, y: 0}
   turretTurning: 0
-  controllerInt: 0
+  controllerInt: 2
 --- !u!1 &1383410945949595821
 GameObject:
   m_ObjectHideFlags: 0

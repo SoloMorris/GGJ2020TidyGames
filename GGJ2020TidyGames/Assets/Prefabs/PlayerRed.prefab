@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 268577152503473217}
   m_Layer: 10
   m_Name: PlayerRed
-  m_TagString: Untagged
+  m_TagString: TankRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 1418905505}
   m_Layer: 10
   m_Name: TankBodyRed
-  m_TagString: Untagged
+  m_TagString: TankRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

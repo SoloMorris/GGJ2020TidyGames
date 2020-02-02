@@ -61,7 +61,7 @@ public class MissileManager : MonoBehaviour
                     _missile.transform.rotation = redTankBarrel.transform.rotation;
                     _missile.transform.position = redSpawner.transform.position;
 
-                    _missile.GetComponent<MissileController>().target = "blue";
+                    _missile.GetComponent<MissileController>().target = "TankBlue";
                     _missile.GetComponent<MissileController>().direction = redTankBarrel.transform.up;
                     _missile.SetActive(true);
 
@@ -79,9 +79,8 @@ public class MissileManager : MonoBehaviour
                     _missile.GetComponent<MissileController>().travelSpeed = missileSpeed;
                     _missile.transform.rotation = blueTankBarrel.transform.rotation;
                     _missile.transform.position = blueSpawner.transform.position;
-                    print(_missile.transform.position  +" " + blueSpawner.transform.position);
 
-                    _missile.GetComponent<MissileController>().target = "red";
+                    _missile.GetComponent<MissileController>().target = "TankRed";
                     _missile.GetComponent<MissileController>().direction = blueTankBarrel.transform.up;
                     _missile.SetActive(true);
                     VFXManager.instance.PlayParticleSystemFromVFXList(blueSpawner, "fireBullet", true, (blueTankBarrel.transform.up * 0.75f));
