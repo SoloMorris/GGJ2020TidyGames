@@ -25,9 +25,6 @@ public enum unit
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
-
-    [SerializeField] ParticleSystem firePuff;
-
     public GameObject[] Maps = new GameObject[5];
     public Transform mapSpawn;
     private GameObject currentMap;
@@ -36,7 +33,7 @@ public class GameManager : MonoBehaviour
     public bool noCoin = false;
     private int coinLocation;
 
-    public GameObject[] interfaces = new GameObject[4];
+    public GameObject[] interfaces = new GameObject[6];
 
     [SerializeField]
     private GameObject coin;
@@ -291,25 +288,33 @@ public class GameManager : MonoBehaviour
                 interfaces[(int)gameState.PLAYER_SELECT].SetActive(false);
                 interfaces[(int)gameState.GAME_PLAY].SetActive(false);
                 interfaces[(int)gameState.END_SCREEN].SetActive(false);
+                interfaces[4].SetActive(false);
+                interfaces[5].SetActive(false);
                 break;
             case gameState.PLAYER_SELECT:
                 interfaces[(int)gameState.MENU].SetActive(false);
                 interfaces[(int)gameState.PLAYER_SELECT].SetActive(true);
                 interfaces[(int)gameState.GAME_PLAY].SetActive(false);
                 interfaces[(int)gameState.END_SCREEN].SetActive(false);
+                interfaces[4].SetActive(false);
+                interfaces[5].SetActive(false);
                 break;
             case gameState.GAME_PLAY:
                 interfaces[(int)gameState.MENU].SetActive(false);
                 interfaces[(int)gameState.PLAYER_SELECT].SetActive(false);
                 interfaces[(int)gameState.GAME_PLAY].SetActive(true);
                 interfaces[(int)gameState.END_SCREEN].SetActive(false);
-                
+                interfaces[4].SetActive(false);
+                interfaces[5].SetActive(false);
+
                 break;
             case gameState.END_SCREEN:
                 interfaces[(int)gameState.MENU].SetActive(false);
                 interfaces[(int)gameState.PLAYER_SELECT].SetActive(false);
                 interfaces[(int)gameState.GAME_PLAY].SetActive(false);
                 interfaces[(int)gameState.END_SCREEN].SetActive(true);
+                interfaces[4].SetActive(true);
+                interfaces[5].SetActive(true);
                 break;
             default:
                 break;
