@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master Bank.strings.bank
   lastModified: 637162453816077579
+=======
+  Path: D:\GGJ2020TidyGames\GGJ2020TidyGames\Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master
+    Bank.bank
+  lastModified: 637161990365768543
+>>>>>>> VFX
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -94,13 +100,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master Bank.strings.bank
+<<<<<<< HEAD
   lastModified: 637162404185821293
+=======
+  lastModified: 637161990365758558
+>>>>>>> VFX
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1218
   Exists: 1
+<<<<<<< HEAD
 --- !u!114 &-6806153701851912551
+=======
+--- !u!114 &-6674275586571906110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &-4985840247095491307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &-4985324356164473933
+>>>>>>> VFX
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,7 +192,43 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+<<<<<<< HEAD
 --- !u!114 &-5545911418651290618
+=======
+--- !u!114 &-2342057918832357536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &-1933756406451464020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &-1926422907468147152
+>>>>>>> VFX
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,7 +248,11 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
+<<<<<<< HEAD
   - {fileID: 7248137378972570337}
+=======
+  - {fileID: -6674275586571906110}
+>>>>>>> VFX
   MinDistance: 0
   MaxDistance: 0
   Length: 2300
@@ -221,6 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: event:/GameplayTank/Gameplay Sounds/Win
   guid: 0f1bcdfc9a9ffe40b1eaa84b7abc2ebe
   Banks:
@@ -233,6 +320,28 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 0
 --- !u!114 &-4951884298285714262
+=======
+  EditorBanks:
+  - {fileID: -6837045097921980395}
+  - {fileID: -8912955433046119437}
+  EditorEvents:
+  - {fileID: -4985324356164473933}
+  - {fileID: 3738607416828127259}
+  - {fileID: 3169231109929310800}
+  - {fileID: 2077928028276419243}
+  - {fileID: -7118109060801132228}
+  - {fileID: -8109682437611834794}
+  - {fileID: 3553272971695981435}
+  - {fileID: 8911926285770904065}
+  - {fileID: 7252187077317970937}
+  - {fileID: -1926422907468147152}
+  - {fileID: 1268117018668016813}
+  MasterBankRef: {fileID: -8912955433046119437}
+  StringsBankRef: {fileID: -6837045097921980395}
+  stringsBankWriteTime: 637161990365758558
+  cacheVersion: 2
+--- !u!114 &218799089546026804
+>>>>>>> VFX
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,7 +357,27 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+<<<<<<< HEAD
 --- !u!114 &-4114912175518752799
+=======
+--- !u!114 &419230678803358552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &569137716489033030
+>>>>>>> VFX
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,6 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: D:\GGJ2020\GGJ2020TidyGames\GGJ2020TidyGames\Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master
     Bank.bank
   lastModified: 637162434381892954
@@ -269,6 +399,29 @@ MonoBehaviour:
     Value: 176896
   Exists: 1
 --- !u!114 &-3714932869935733097
+=======
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &1166115306499264289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &1268117018668016813
+>>>>>>> VFX
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,7 +441,11 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
+<<<<<<< HEAD
   - {fileID: -2102884028402118500}
+=======
+  - {fileID: 7414464640908876620}
+>>>>>>> VFX
   MinDistance: 0
   MaxDistance: 0
   Length: 250
@@ -347,11 +504,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Name: Hit
   Min: 0
   Max: 1
   Default: 0
 --- !u!114 &-1926422907468147152
+=======
+  Path: D:\GGJ2020TidyGames\GGJ2020TidyGames\Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master
+    Bank.bank
+  lastModified: 637161990365768543
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 125536
+  Exists: 1
+--- !u!114 &2077928028276419243
+>>>>>>> VFX
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -435,6 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   EditorBanks:
   - {fileID: -8370375524587854422}
   - {fileID: 1366734503668363740}
@@ -457,6 +627,36 @@ MonoBehaviour:
   stringsBankWriteTime: 637162453816077579
   cacheVersion: 2
 --- !u!114 &61615361009956758
+=======
+  Path: event:/GameplayTank/Gameplay Sounds/Die
+  guid: 988ca1b8f4be5f4ba28d5ec6764adc02
+  Banks:
+  - {fileID: -8912955433046119437}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &5550172699050647643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Accel
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &6445668589984859318
+>>>>>>> VFX
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1146,11 +1346,19 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
+<<<<<<< HEAD
   - {fileID: -1276986047435295412}
   MinDistance: 0
   MaxDistance: 0
   Length: 1350
 --- !u!114 &7344597893489313103
+=======
+  - {fileID: 419230678803358552}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1350
+--- !u!114 &7414464640908876620
+>>>>>>> VFX
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1162,7 +1370,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Name: Hit
+=======
+  Name: Accel
+>>>>>>> VFX
   Min: 0
   Max: 1
   Default: 0

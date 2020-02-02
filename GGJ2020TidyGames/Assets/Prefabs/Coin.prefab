@@ -120,3 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66134d57a358a9a4bb2a434fbb1b08d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupFX: {fileID: 3900768531632947693, guid: 27ea40fcd43991a4996cc644d40bcfe3,
+    type: 3}
+  ambientFX: {fileID: 5836928266377170917, guid: 379bfac9554997c4fb935cbe273b9860,
+    type: 3}
