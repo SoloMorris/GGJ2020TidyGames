@@ -17,6 +17,7 @@ public class CircuitBoard : MonoBehaviour
 
     public int[] maxCounts = new int[4];
 
+    [SerializeField]
     private int[] buttonHealth = new int[4];
 
     private bool[] buttonAlive = new bool[4];

@@ -65,8 +65,6 @@ public class GameManager : MonoBehaviour
     {
         UIUpdate();
 
-        Debug.Log(state);
-
         switch (state)
         {
             case gameState.MENU:
@@ -120,11 +118,11 @@ public class GameManager : MonoBehaviour
 
             if (noCoin)
             {
-                int spawn = Random.Range(1, 5);
+                int spawn = Random.Range(0, 5);
 
                 while (spawn == coinLocation)
                 {
-                    spawn = Random.Range(1, 5);
+                    spawn = Random.Range(0, 5);
                 } 
 
                 SpawnCoin(spawn);
@@ -140,7 +138,7 @@ public class GameManager : MonoBehaviour
     private void GameStart()
     {
         roundTimer = 60;
-        LoadMap(Random.Range(0,4));
+        LoadMap(Random.Range(0,5));
         SpawnCoin(0);
     }
 
@@ -155,10 +153,8 @@ public class GameManager : MonoBehaviour
     {
         GameObject newCoin = Instantiate(coin, currentMap.transform);
         newCoin.transform.localPosition = coinSpawns[location].position;
-        Debug.Log("coin location = " + coinSpawns[location].position);
         noCoin = false;
         coinLocation = location;
-        Debug.Log("coin spawned");
     }
 
     private void PlayerSelectUpdate()
