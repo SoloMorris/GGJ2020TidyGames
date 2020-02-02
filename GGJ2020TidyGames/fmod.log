@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000260E4A2C418 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001C9AA4AED88 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -26,14 +26,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 155072
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 27296
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000E39138EE9C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000626198F3DC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA59ACD9C0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA59ACD990
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA59ACDA90
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA59ACDB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000026082DF0438
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8B41CD9C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8B41CD990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8B41CDA90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8B41CDB50
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001C9AFDF1178
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Servo Motor M stressed_04', format=2, channels=2, frequency=48000, lengthbytes=5440, lengthpcm=20992, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.276156.
@@ -42,14 +42,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 155072
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 27296
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000E39138EE9C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000626198F3DC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA59ACD9C0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA59ACD990
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA59ACDA90
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA59ACDB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000026082E77D28
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8B41CD9C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8B41CD990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8B41CDA90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8B41CDB50
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001C989554AB8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='turret shot_1', format=2, channels=2, frequency=48000, lengthbytes=6592, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.611145.
@@ -58,23 +58,23 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 155072
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 27296
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000E39138EE9C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000626198F3DC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA59ACD9C0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA59ACD990
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA59ACDA90
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA59ACDB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000026082F2A7B8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8B41CD9C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8B41CD990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8B41CDA90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8B41CDB50
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001C989553358
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='turret hit_1', format=2, channels=2, frequency=48000, lengthbytes=2720, lengthpcm=35665, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.805298.
-[LOG] SoundI::release                          :  (0000026082A8ED98)
-[LOG] SoundI::release                          :     turret hit_1 (00000260EBCD8338)
-[LOG] SoundI::release                          :  (0000026082CF9C68)
-[LOG] SoundI::release                          :     turret shot_1 (00000260EBCD96B8)
-[LOG] SoundI::release                          :  (00000260C1A753C8)
-[LOG] SoundI::release                          :     Servo Motor M stressed_04 (00000260E759D918)
+[LOG] SoundI::release                          :  (000001C9BF2A7C78)
+[LOG] SoundI::release                          :     turret hit_1 (000001C9A416C418)
+[LOG] SoundI::release                          :  (000001C9BF2A7998)
+[LOG] SoundI::release                          :     turret shot_1 (000001C9A416CC38)
+[LOG] SoundI::release                          :  (000001C9BF2AA068)
+[LOG] SoundI::release                          :     Servo Motor M stressed_04 (000001C9A416D2B8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
