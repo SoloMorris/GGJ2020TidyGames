@@ -301,6 +301,7 @@ MonoBehaviour:
   currentPos: {x: 0, y: 0}
   controllerInt: 2
   moveDelay: 0.1
+  repairEvent: event:/GameplayRepairer/Spark/Repair
 --- !u!1 &3603979166572536716
 GameObject:
   m_ObjectHideFlags: 0
@@ -5260,6 +5261,7 @@ MonoBehaviour:
   currentPos: {x: 0, y: 0}
   controllerInt: 1
   moveDelay: 0.1
+  repairEvent: 
 --- !u!1 &3603979167931988123
 GameObject:
   m_ObjectHideFlags: 0

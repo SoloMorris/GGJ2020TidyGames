@@ -27,12 +27,14 @@ public class CoinScript : MonoBehaviour
         if (collision.gameObject.CompareTag("TankRed"))
         {
             gm.scores.x += 1;
+            gm.noCoin = true;
             VFXManager.instance.PlayParticleSystemFromVFXList(gameObject, "coinPickup");
             Destroy(this.gameObject);
         }
         else if (collision.gameObject.CompareTag("TankBlue"))
         {
             gm.scores.y += 1;
+            gm.noCoin = true;
             VFXManager.instance.PlayParticleSystemFromVFXList(gameObject, "coinPickup");
             Destroy(this.gameObject);
         }

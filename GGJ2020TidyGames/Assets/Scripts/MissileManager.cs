@@ -44,7 +44,6 @@ public class MissileManager : MonoBehaviour
             blueMissiles[i].SetActive(false);
             VFXManager.instance.AddParticleSystemToVFXList(firePuff, "fireBullet", 4);
             VFXManager.instance.AddParticleSystemToVFXList(bulletExplosion, "bulletExplode", 4);
-            Debug.Log("1");
         }
 
     }

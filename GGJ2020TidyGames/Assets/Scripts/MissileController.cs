@@ -10,6 +10,15 @@ public class MissileController : MonoBehaviour
     private float lifeTimer;
     [SerializeField] private float lifeDuration;
     // Start is called before the first frame update
+
+    //AUDIO CODE
+    public string turretHitEvent = "";
+    public string wallHitEvent = "";
+
+    FMOD.Studio.EventInstance turretHit;
+    FMOD.Studio.EventInstance wallHit;
+
+
     void Start()
     {
         
@@ -39,15 +48,25 @@ public class MissileController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacles"))
         {
+            //Obstacle
             Explode();
+
+            //AUDIO CODE
+            wallHit = FMODUnity.RuntimeManager.CreateInstance(wallHitEvent);
+            wallHit.start();
+
         }
 
         if (collision.gameObject.CompareTag(target))
         {
+            //Tank
             Debug.Log("Hit " + target + " tank!");
             collision.gameObject.GetComponent<TankMovement>().GetHit(this.gameObject);
             Explode();
 
+            //AUDIO CODE
+            turretHit = FMODUnity.RuntimeManager.CreateInstance(turretHitEvent);
+            turretHit.start();
         }
     }
 

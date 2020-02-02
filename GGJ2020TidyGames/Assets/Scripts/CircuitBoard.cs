@@ -17,6 +17,7 @@ public class CircuitBoard : MonoBehaviour
 
     public int[] maxCounts = new int[4];
 
+    [SerializeField]
     private int[] buttonHealth = new int[4];
 
     private bool[] buttonAlive = new bool[4];
@@ -30,9 +31,12 @@ public class CircuitBoard : MonoBehaviour
     [SerializeField] private ParticleSystem buttonDeath;
     [SerializeField] private ParticleSystem buttonDeathAmbient;
 
+    private GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
+        gm = FindObjectOfType<GameManager>();
         for (int i = 0; i < 4; i++)
         {
             buttonHealth[i] = maxCounts[i];
@@ -46,13 +50,19 @@ public class CircuitBoard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AliveUpdate();
-        DisplayUpdate();
+        if (gm.state == gameState.GAME_PLAY)
+        {
+            AliveUpdate();
+            DisplayUpdate();
+        }
     }
 
     private void FixedUpdate()
     {
-        DamageOverTime();
+        if (gm.state == gameState.GAME_PLAY)
+        {
+            DamageOverTime();
+        }
     }
 
     public void DisplayUpdate()
@@ -92,7 +102,6 @@ public class CircuitBoard : MonoBehaviour
         if (buttonAlive[(int)target])
         {
             buttonHealth[(int)target] -= damage;
-            Debug.Log(target + " takes damage");
         }
     }
 
