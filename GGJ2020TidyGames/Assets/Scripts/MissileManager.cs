@@ -79,6 +79,7 @@ public class MissileManager : MonoBehaviour
                     _missile.GetComponent<MissileController>().travelSpeed = missileSpeed;
                     _missile.transform.rotation = blueTankBarrel.transform.rotation;
                     _missile.transform.position = blueSpawner.transform.position;
+                    print(_missile.transform.position  +" " + blueSpawner.transform.position);
 
                     _missile.GetComponent<MissileController>().target = "red";
                     _missile.GetComponent<MissileController>().direction = blueTankBarrel.transform.up;
