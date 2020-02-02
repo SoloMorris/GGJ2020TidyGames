@@ -24,7 +24,6 @@ public class TankMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        VFXManager.instance.AddParticleSystemToVFXList(movementFX, "moveTrails");
     }
 
     // Update is called once per frame
