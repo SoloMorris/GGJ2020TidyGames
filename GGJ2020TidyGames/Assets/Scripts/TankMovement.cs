@@ -33,7 +33,6 @@ public class TankMovement : MonoBehaviour
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
-        VFXManager.instance.AddParticleSystemToVFXList(movementFX, "moveTrails");
     }
 
     // Update is called once per frame

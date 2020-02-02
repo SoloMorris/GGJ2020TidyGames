@@ -35,6 +35,10 @@ public class SparkPlayer : MonoBehaviour
 
     private GameManager gm;
 
+    //AUDIO CODE
+    public string repairEvent = "";
+    FMOD.Studio.EventInstance repair;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -69,22 +73,34 @@ public class SparkPlayer : MonoBehaviour
         bool output = false;
         if (GetInputs(controllerInt, input.A))
         {
+
+            repair = FMODUnity.RuntimeManager.CreateInstance(repairEvent);
+
             Vector3Int posV3 = new Vector3Int(currentPos.x, currentPos.y, 0);
             if (tilemap.GetTile(posV3).name == "ATile")
             {
                 output = board.RepairButton(button.DASH);
+                //repair.start();
             }
             else if (tilemap.GetTile(posV3).name == "XTile")
             {
                 output = board.RepairButton(button.SHOOT);
+                //repair.start();
             }
             else if (tilemap.GetTile(posV3).name == "MoveTile")
             {
                 output = board.RepairButton(button.MOVEMENT);
+                //repair.start();
             }
             else if (tilemap.GetTile(posV3).name == "AmmoTile")
             {
                 output = board.RepairButton(button.RELOAD);
+                //repair.start();
+            }
+
+            if (output)
+            {
+                repair.start();
             }
         }
         return output;

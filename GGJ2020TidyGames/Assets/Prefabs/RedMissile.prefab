@@ -120,8 +120,8 @@ MonoBehaviour:
   travelSpeed: 0
   direction: {x: 0, y: 0}
   lifeDuration: 5
-  turretHitEvent: event:/GameplayTank/Tank/Hit
-  wallHitEvent: event:/GameplayTank/Tank/HitWall
+  turretHitEvent: event:/GameplayTank/Tank/HitWall
+  wallHitEvent: event:/GameplayTank/Tank/Hit
 --- !u!61 &5382540271599719927
 BoxCollider2D:
   m_ObjectHideFlags: 0
