@@ -167,12 +167,5 @@ public class TankMovement : MonoBehaviour
         board.DamageButton(button.MOVEMENT, 10);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("coin"))
-        {
-            Destroy(collision.gameObject);
-        }
-    }
 
-    }
+}

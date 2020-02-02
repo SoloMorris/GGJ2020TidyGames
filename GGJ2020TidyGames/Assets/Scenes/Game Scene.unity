@@ -5861,12 +5861,12 @@ PrefabInstance:
     - target: {fileID: 3603979167838385415, guid: 676066601d8b9c5489aaca2d51d2dd0a,
         type: 3}
       propertyPath: damageDelay.Array.data[2]
-      value: 999
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3603979167838385415, guid: 676066601d8b9c5489aaca2d51d2dd0a,
         type: 3}
       propertyPath: damageDelay.Array.data[3]
-      value: 999
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3603979167838385415, guid: 676066601d8b9c5489aaca2d51d2dd0a,
         type: 3}
@@ -11407,6 +11407,11 @@ PrefabInstance:
       propertyPath: turretTurnEvent
       value: event:/GameplayTank/Tank/Turning
       objectReference: {fileID: 0}
+    - target: {fileID: 268577153338325153, guid: 33ec934a3e676ca4e848a7a6a2cbde4e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 268577153338325154, guid: 33ec934a3e676ca4e848a7a6a2cbde4e,
         type: 3}
       propertyPath: controllerInt
@@ -11447,7 +11452,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerRed
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 268577153338325153, guid: 33ec934a3e676ca4e848a7a6a2cbde4e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 33ec934a3e676ca4e848a7a6a2cbde4e, type: 3}
 --- !u!1 &1302924575
 GameObject:
