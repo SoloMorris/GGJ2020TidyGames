@@ -33,9 +33,12 @@ public class SparkPlayer : MonoBehaviour
     private float lastMoveTime = 0;
     public float moveDelay;
 
+    private GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
+        gm = FindObjectOfType<GameManager>();
         //tilemap = GameObject.FindGameObjectWithTag("Circuit_Board").GetComponent<Tilemap>();
         board = tilemap.gameObject.GetComponent<CircuitBoard>();
 
@@ -47,9 +50,12 @@ public class SparkPlayer : MonoBehaviour
 
     private void Update()
     {
-        UpdateControls();
-        Repairing();
-        Movement();
+        if (gm.state == gameState.GAME_PLAY)
+        {
+            UpdateControls();
+            Repairing();
+            Movement();
+        }
     }
 
     // Update is called once per frame
@@ -67,22 +73,18 @@ public class SparkPlayer : MonoBehaviour
             if (tilemap.GetTile(posV3).name == "ATile")
             {
                 output = board.RepairButton(button.DASH);
-                Debug.Log("dash repaired - " + board);
             }
             else if (tilemap.GetTile(posV3).name == "XTile")
             {
                 output = board.RepairButton(button.SHOOT);
-                Debug.Log("shoot repaired");
             }
             else if (tilemap.GetTile(posV3).name == "MoveTile")
             {
                 output = board.RepairButton(button.MOVEMENT);
-                Debug.Log("movement repaired");
             }
             else if (tilemap.GetTile(posV3).name == "AmmoTile")
             {
                 output = board.RepairButton(button.RELOAD);
-                Debug.Log("reload repaired");
             }
         }
         return output;
@@ -235,5 +237,11 @@ public class SparkPlayer : MonoBehaviour
                 inputNames[3] =          "XFour";
                 break;
         }
+    }
+
+    public void SetCurrentPos(int x, int y)
+    {
+        currentPos.x = x;
+        currentPos.y = y;
     }
 }

@@ -24,6 +24,7 @@ public class MissileManager : MonoBehaviour
     private float missileSpeed;
 
     [SerializeField] private ParticleSystem firePuff;
+    [SerializeField] private ParticleSystem bulletExplosion;
 
     private void Awake()
     {
@@ -41,8 +42,8 @@ public class MissileManager : MonoBehaviour
             redMissiles[i].SetActive(false);
             blueMissiles.Add(Instantiate(blueMissile, transform));
             blueMissiles[i].SetActive(false);
-
-            VFXManager.instance.AddParticleSystemToVFXList(firePuff, "fireBullet", 2);
+            VFXManager.instance.AddParticleSystemToVFXList(firePuff, "fireBullet", 4);
+            VFXManager.instance.AddParticleSystemToVFXList(bulletExplosion, "bulletExplode", 4);
         }
 
     }
@@ -59,7 +60,7 @@ public class MissileManager : MonoBehaviour
                     _missile.transform.rotation = redTankBarrel.transform.rotation;
                     _missile.transform.position = redSpawner.transform.position;
 
-                    _missile.GetComponent<MissileController>().target = "blue";
+                    _missile.GetComponent<MissileController>().target = "TankBlue";
                     _missile.GetComponent<MissileController>().direction = redTankBarrel.transform.up;
                     _missile.SetActive(true);
 
@@ -78,7 +79,7 @@ public class MissileManager : MonoBehaviour
                     _missile.transform.rotation = blueTankBarrel.transform.rotation;
                     _missile.transform.position = blueSpawner.transform.position;
 
-                    _missile.GetComponent<MissileController>().target = "red";
+                    _missile.GetComponent<MissileController>().target = "TankRed";
                     _missile.GetComponent<MissileController>().direction = blueTankBarrel.transform.up;
                     _missile.SetActive(true);
                     VFXManager.instance.PlayParticleSystemFromVFXList(blueSpawner, "fireBullet", true, (blueTankBarrel.transform.up * 0.75f));

@@ -8,6 +8,9 @@ TagManager:
   - Obstacles
   - TankRed
   - TankBlue
+  - red
+  - blue
+  - coin
   layers:
   - Default
   - TransparentFX
@@ -19,7 +22,7 @@ TagManager:
   - 
   - CB1
   - CB2
-  - 
+  - TankGame
   - 
   - 
   - 

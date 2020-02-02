@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1802658953125514578}
   - component: {fileID: 1802658953125514541}
   - component: {fileID: 1802658953125514540}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FireBulletFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4805,7 +4805,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_RenderMode: 3
   m_SortMode: 0
   m_MinParticleSize: 0

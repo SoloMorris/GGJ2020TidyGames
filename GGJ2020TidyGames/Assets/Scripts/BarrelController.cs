@@ -15,6 +15,10 @@ public class BarrelController : MonoBehaviour
     public int controllerInt;
     private string[] inputNames = new string[4];
 
+    //AUDIO CODE
+    public string turretTurnEvent = "";
+    FMOD.Studio.EventInstance turretTurn;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +45,9 @@ public class BarrelController : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 4f * Time.deltaTime);
             transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
 
+            //AUDIO CODE
+            turretTurn = FMODUnity.RuntimeManager.CreateInstance(turretTurnEvent);
+            turretTurn.start();
         }
        
 

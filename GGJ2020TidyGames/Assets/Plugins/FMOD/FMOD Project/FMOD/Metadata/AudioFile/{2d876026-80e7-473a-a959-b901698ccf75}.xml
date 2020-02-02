@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{2d876026-80e7-473a-a959-b901698ccf75}">
+        <property name="assetPath">
+            <value>Wok Top HiVel 6.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>8.0749999999999993</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{d2f748ac-53c3-4f7b-953d-b308472aae9b}</destination>
+        </relationship>
+    </object>
+</objects>

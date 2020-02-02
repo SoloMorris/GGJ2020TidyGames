@@ -27,9 +27,12 @@ public class CircuitBoard : MonoBehaviour
 
     public Slider[] displays = new Slider[4];
 
+    private GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
+        gm = FindObjectOfType<GameManager>();
         for (int i = 0; i < 4; i++)
         {
             buttonHealth[i] = maxCounts[i];
@@ -41,13 +44,19 @@ public class CircuitBoard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AliveUpdate();
-        DisplayUpdate();
+        if (gm.state == gameState.GAME_PLAY)
+        {
+            AliveUpdate();
+            DisplayUpdate();
+        }
     }
 
     private void FixedUpdate()
     {
-        DamageOverTime();
+        if (gm.state == gameState.GAME_PLAY)
+        {
+            DamageOverTime();
+        }
     }
 
     public void DisplayUpdate()
@@ -83,7 +92,6 @@ public class CircuitBoard : MonoBehaviour
         if (buttonAlive[(int)target])
         {
             buttonHealth[(int)target] -= damage;
-            Debug.Log(target + " takes damage");
         }
     }
 
@@ -108,5 +116,10 @@ public class CircuitBoard : MonoBehaviour
                 lastDamageTick[i] = Time.time;
             }
         }
+    }
+
+    public bool CheckButton(button target)
+    {
+        return buttonAlive[(int)target];
     }
 }

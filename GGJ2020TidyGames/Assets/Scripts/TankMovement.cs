@@ -5,7 +5,7 @@ using UnityEngine;
 public class TankMovement : MonoBehaviour
 {
     [SerializeField]
-    [Range (0f,20000f)]
+    [Range(0f, 20000f)]
     private float movementSpeed = 2f;
 
     public Rigidbody2D rb;
@@ -16,68 +16,85 @@ public class TankMovement : MonoBehaviour
 
     private string[] inputNames = new string[4];
     public int controllerInt;
+    public bool blue;
+    [SerializeField] private ParticleSystem movementFX;
+
+    [SerializeField]
+    private CircuitBoard board;
+
+    private GameManager gm;
+
+    //AUDIO CODE
+    public string turretShootEvent = "";
+    FMOD.Studio.EventInstance turretShoot;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        UpdateControls();
+        gm = FindObjectOfType<GameManager>();
+        VFXManager.instance.AddParticleSystemToVFXList(movementFX, "moveTrails");
     }
 
     // Update is called once per frame
     void Update()
     {
-        movement.x = GetInputs(controllerInt, input.RIGHT);
-        movement.y = GetInputs(controllerInt, input.UP);
-        if (GetInputs(controllerInt, input.X) == 1)
+        if (gm.state == gameState.GAME_PLAY)
         {
-            if (controllerInt == 1)
+            UpdateControls();
+            movement.x = GetInputs(controllerInt, input.RIGHT);
+            movement.y = GetInputs(controllerInt, input.UP);
+
+            if (GetInputs(controllerInt, input.X) == 1 && board.CheckButton(button.SHOOT) && board.CheckButton(button.RELOAD))
             {
-                MissileManager.instance.FireMissile("red");
-                Debug.Log("Red Shot!");
-            }
-            else if (controllerInt == 2)
-            {
-                MissileManager.instance.FireMissile("blue");
-                Debug.Log("Blue Shot!");
+                if (!blue)
+                {
+
+                    if (MissileManager.instance.FireMissile("red"))
+                    {
+                        //AUDIO CODE
+                        turretShoot = FMODUnity.RuntimeManager.CreateInstance(turretShootEvent);
+                        turretShoot.start();
+
+                        board.DamageButton(button.RELOAD, 1);
+                    }
+                }
+                else if (blue)
+                {
+
+                    if (MissileManager.instance.FireMissile("blue"))
+                    {
+                        //AUDIO CODE
+                        turretShoot = FMODUnity.RuntimeManager.CreateInstance(turretShootEvent);
+                        turretShoot.start();
+
+                        board.DamageButton(button.RELOAD, 1);
+                    }
+                }
             }
 
+            if (GetInputs(controllerInt, input.A) == 1 && board.CheckButton(button.DASH))
+            {
+                rb.AddRelativeForce(Vector2.up * movementSpeed / 2 * Time.deltaTime, ForceMode2D.Impulse);
+                board.DamageButton(button.DASH, 1);
+            }
         }
     }
 
     private void FixedUpdate()
     {
-        if (movement.magnitude > 0.0f)
+        if (gm.state == gameState.GAME_PLAY)
         {
-            //rb.MovePosition(rb.position + Vector2.up * movementSpeed * Time.fixedDeltaTime);
-            rb.AddRelativeForce(Vector2.up * movementSpeed * Time.deltaTime, ForceMode2D.Force);
+            if (movement.magnitude > 0.0f && board.CheckButton(button.MOVEMENT))
+            {
+                rb.AddRelativeForce(Vector2.up * movementSpeed * Time.deltaTime, ForceMode2D.Force);
 
-
-
+                Quaternion targetRotation = Quaternion.LookRotation(movement, Vector3.back);
+                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 4);
+                transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
+            }
         }
-        if (movement.magnitude > 0.0f)
-        {
-            //angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90;
-            ////float rotate = Mathf.Lerp(rb.rotation, angle, 0.8f *Time.fixedDeltaTime);
-            ////rb.rotation = rotate;
-            ////Vector3 targetDirection = rotationTarget.transform.position - transform.position;
-            //Vector3 newDirection = Vector3.RotateTowards(transform.forward, movement, 10 * Time.fixedDeltaTime, 100.0f);
-            //Debug.Log(movement);
-            ////transform.rotation = Quaternion.LookRotation(new Vector3(0,0, Mathf.Atan2(newDirection.y, newDirection.x) * Mathf.Rad2Deg - 90));
-            //transform.rotation = Quaternion.LookRotation(newDirection);
 
-            //var angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90;
-            //Quaternion something = Quaternion.AngleAxis(angle, Vector3.forward);
-            //Vector3 newRotation = Vector3.RotateTowards(transform.forward,new Vector3(0,0,something.eulerAngles.z), 100 * Time.deltaTime, 0.0f);
-            //Debug.Log(something.eulerAngles);
-            //// Draw a ray pointing at our target in
-            //Debug.DrawRay(transform.position, newRotation, Color.red);
-            //transform.rotation = Quaternion.LookRotation(newRotation);
-
-            Quaternion targetRotation = Quaternion.LookRotation(movement, Vector3.back);
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 4);
-            transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
-        }
-        
     }
 
     private float GetInputs(int controllerInt, input inputType)
@@ -139,6 +156,22 @@ public class TankMovement : MonoBehaviour
                 inputNames[2] = "AFour";
                 inputNames[3] = "XFour";
                 break;
+        }
+    }
+
+    public void GetHit(GameObject missile)
+    {
+        Vector2 pushbackDir = missile.transform.position  - transform.position;
+        pushbackDir.Normalize();
+        rb.AddForce(-pushbackDir * movementSpeed / 4 * Time.deltaTime, ForceMode2D.Impulse);
+        board.DamageButton(button.MOVEMENT, 10);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("coin"))
+        {
+            Destroy(collision.gameObject);
         }
     }
 }

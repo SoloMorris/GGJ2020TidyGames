@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1131190908177689802}
   - component: {fileID: 1131190908177689845}
   - component: {fileID: 1131190908177689844}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CB2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131190908177689847}
-  m_LocalRotation: {x: -0, y: -0.99748325, z: 0.07090262, w: 0}
+  m_LocalRotation: {x: -0.0000000132773215, y: -0.9974831, z: 0.070905596, w: -0.0000001867822}
   m_LocalPosition: {x: 0.65, y: 0.21, z: -7.68}
   m_LocalScale: {x: 0.12214884, y: 0.76343, z: 0.0687087}
   m_Children: []
