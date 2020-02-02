@@ -291,18 +291,24 @@ public class GameManager : MonoBehaviour
                 interfaces[(int)gameState.PLAYER_SELECT].SetActive(false);
                 interfaces[(int)gameState.GAME_PLAY].SetActive(false);
                 interfaces[(int)gameState.END_SCREEN].SetActive(false);
+                interfaces[4].SetActive(false);
+                interfaces[5].SetActive(false);
                 break;
             case gameState.PLAYER_SELECT:
                 interfaces[(int)gameState.MENU].SetActive(false);
                 interfaces[(int)gameState.PLAYER_SELECT].SetActive(true);
                 interfaces[(int)gameState.GAME_PLAY].SetActive(false);
                 interfaces[(int)gameState.END_SCREEN].SetActive(false);
+                interfaces[4].SetActive(false);
+                interfaces[5].SetActive(false);
                 break;
             case gameState.GAME_PLAY:
                 interfaces[(int)gameState.MENU].SetActive(false);
                 interfaces[(int)gameState.PLAYER_SELECT].SetActive(false);
                 interfaces[(int)gameState.GAME_PLAY].SetActive(true);
                 interfaces[(int)gameState.END_SCREEN].SetActive(false);
+                interfaces[4].SetActive(false);
+                interfaces[5].SetActive(false);
 
                 break;
             case gameState.END_SCREEN:
@@ -310,6 +316,8 @@ public class GameManager : MonoBehaviour
                 interfaces[(int)gameState.PLAYER_SELECT].SetActive(false);
                 interfaces[(int)gameState.GAME_PLAY].SetActive(false);
                 interfaces[(int)gameState.END_SCREEN].SetActive(true);
+                interfaces[4].SetActive(true);
+                interfaces[5].SetActive(true);
                 break;
             default:
                 break;
