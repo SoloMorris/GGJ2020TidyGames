@@ -40,12 +40,20 @@ public class CircuitBoard : MonoBehaviour
         gm = FindObjectOfType<GameManager>();
         for (int i = 0; i < 4; i++)
         {
-            buttonHealth[i] = maxCounts[i];
-            displays[i].maxValue = maxCounts[i];
-            lastDamageTick[i] = 0;
+            ResetBoard();
             VFXManager.instance.AddParticleSystemToVFXList(buttonDeath, "killButton" + layer.ToString());
             VFXManager.instance.AddParticleSystemToVFXList(buttonDeathAmbient, "deadButton" + layer.ToString());
         }
+    }
+
+    public void ResetBoard()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            buttonHealth[i] = maxCounts[i];
+            displays[i].maxValue = maxCounts[i];
+            lastDamageTick[i] = 0;
+        }   
     }
 
     // Update is called once per frame
