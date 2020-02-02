@@ -145,4 +145,12 @@ public class TankMovement : MonoBehaviour
         rb.AddForce(-pushbackDir * movementSpeed / 4 * Time.deltaTime, ForceMode2D.Impulse);
         board.DamageButton(button.MOVEMENT, 10);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("coin"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }
