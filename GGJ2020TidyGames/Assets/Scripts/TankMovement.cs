@@ -141,5 +141,6 @@ public class TankMovement : MonoBehaviour
         Vector2 pushbackDir = missile.transform.position  - transform.position;
         pushbackDir.Normalize();
         rb.AddForce(-pushbackDir * movementSpeed / 4 * Time.deltaTime, ForceMode2D.Impulse);
+        board.DamageButton(button.MOVEMENT, 10);
     }
 }
