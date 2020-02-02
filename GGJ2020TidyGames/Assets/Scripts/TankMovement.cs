@@ -16,6 +16,7 @@ public class TankMovement : MonoBehaviour
 
     private string[] inputNames = new string[4];
     public int controllerInt;
+    public bool blue;
     [SerializeField] private ParticleSystem movementFX;
 
     [SerializeField]
@@ -46,7 +47,9 @@ public class TankMovement : MonoBehaviour
 
             if (GetInputs(controllerInt, input.X) == 1 && board.CheckButton(button.SHOOT) && board.CheckButton(button.RELOAD))
             {
-                case 1:
+                if (!blue)
+                {
+
                     if (MissileManager.instance.FireMissile("red"))
                     {
                         //AUDIO CODE
@@ -55,8 +58,10 @@ public class TankMovement : MonoBehaviour
 
                         board.DamageButton(button.RELOAD, 1);
                     }
-                    break;
-                case 2:
+                }
+                else if (blue)
+                {
+
                     if (MissileManager.instance.FireMissile("blue"))
                     {
                         //AUDIO CODE
@@ -65,9 +70,7 @@ public class TankMovement : MonoBehaviour
 
                         board.DamageButton(button.RELOAD, 1);
                     }
-                    break;
-                default:
-                    break;
+                }
             }
 
             if (GetInputs(controllerInt, input.A) == 1 && board.CheckButton(button.DASH))
