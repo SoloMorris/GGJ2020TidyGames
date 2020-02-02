@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2744622634310240319}
   - component: {fileID: 2744622634310240316}
   - component: {fileID: 2744622634310240317}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MissileExplosionFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}

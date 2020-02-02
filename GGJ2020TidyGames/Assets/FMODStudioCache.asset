@@ -1,13 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &-9043876937411417161
-=======
---- !u!114 &-9184133437708670876
-=======
---- !u!114 &-8539703284930721154
->>>>>>> GameStuff
+--- !u!114 &-8109682437611834794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19,432 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Name: Accel
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-6985832160244288661
->>>>>>> PlayerMovement
-=======
-  Path: event:/GameplayTank/Tank/Movement
-  guid: 461634ab1d90e248b410c2aaa2b327fb
-  Banks:
-  - {fileID: -2902673749671029313}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -3096682348469935678}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 250
---- !u!114 &-8042756799668978376
->>>>>>> GameStuff
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  Path: event:/GameplayRepairer/Spark/Repair
-  guid: 4829f24c8d2f7345913f239b4aa63d82
-  Banks:
-  - {fileID: -3291248795926403274}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 400
---- !u!114 &-7833768530561303072
-=======
-  Path: D:\GGJ2020TidyGames\GGJ2020TidyGames\Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master
-    Bank.bank
-<<<<<<< HEAD
-  lastModified: 637161778765471743
-=======
-  lastModified: 637161861772506142
->>>>>>> develop
-=======
-  Path: Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637161778765481722
->>>>>>> GameStuff
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1218
-  Exists: 1
---- !u!114 &-8019064268985534666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-6168473797611564937
->>>>>>> PlayerMovement
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
-<<<<<<< HEAD
---- !u!114 &-6160011174158415531
-=======
---- !u!114 &-6075958708348310298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-5939683397277900452
-=======
-  Path: event:/GameplayRepairer/Spark/SparkMovement
-  guid: df396a85da0ace4a9156c8467a9f6591
-  Banks:
-  - {fileID: -2902673749671029313}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 3615512390830583390}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2300
---- !u!114 &-7984607777646010224
->>>>>>> GameStuff
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-5711634378394173967
->>>>>>> PlayerMovement
-=======
-  Path: event:/GameplayTank/Tank/Shoot
-  guid: c9bb256ac1977d4d9ca34a7e0691858a
-  Banks:
-  - {fileID: -2902673749671029313}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 5468679137280275291}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1350
---- !u!114 &-7613759987504703905
->>>>>>> GameStuff
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/GameplayRepairer/Spark/SparkMovement
-  guid: df396a85da0ace4a9156c8467a9f6591
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -3291248795926403274}
-=======
-  - {fileID: -3858135785004731976}
->>>>>>> PlayerMovement
-=======
-  Path: event:/GameplayTank/Tank/Turning
-  guid: bbc347438f0ff74688657b35cf57b867
-  Banks:
-  - {fileID: -2902673749671029313}
->>>>>>> GameStuff
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 8735560672386850858}
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 2300
---- !u!114 &-5980441968648831786
-=======
-  Length: 345
---- !u!114 &-6485028664264640244
->>>>>>> GameStuff
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/GameplayTank/Tank/Movement
-  guid: 461634ab1d90e248b410c2aaa2b327fb
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -3291248795926403274}
-=======
-  - {fileID: -3858135785004731976}
->>>>>>> PlayerMovement
-=======
-  Path: event:/GameplayTank/Gameplay Sounds/Win
-  guid: 0f1bcdfc9a9ffe40b1eaa84b7abc2ebe
-  Banks:
-  - {fileID: -2902673749671029313}
->>>>>>> GameStuff
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 8147442714286984950}
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 250
---- !u!114 &-3400939133510540784
-=======
-  Length: 0
-<<<<<<< HEAD
---- !u!114 &-4589017814060288010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Accel
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-4489460610894478012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-3123070361532455344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-2728253512800144972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-2198275874652265359
->>>>>>> PlayerMovement
-=======
---- !u!114 &-6028953520448735131
->>>>>>> GameStuff
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/GameplayTank/Gameplay Sounds/Die
-  guid: 988ca1b8f4be5f4ba28d5ec6764adc02
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -3291248795926403274}
-=======
-  - {fileID: -3858135785004731976}
->>>>>>> PlayerMovement
-=======
-  Path: event:/GameplayTank/Environment/GameMusic
-  guid: 736b9c45c379114686054f5e47d47d71
-  Banks:
-  - {fileID: -2902673749671029313}
->>>>>>> GameStuff
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
-<<<<<<< HEAD
---- !u!114 &-3291248795926403274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-1777755369798021669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Accel
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-1399031620545803746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-1105704390534058053
-=======
---- !u!114 &-4140549105038677626
->>>>>>> GameStuff
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
   Path: event:/GameplayTank/Gameplay Sounds/MenuMusic
   guid: 7649f2f4521f52498066482f218fffe3
   Banks:
-<<<<<<< HEAD
-  - {fileID: -3291248795926403274}
-=======
-  - {fileID: -3858135785004731976}
->>>>>>> PlayerMovement
-=======
-  Path: event:/GameplayTank/Gameplay Sounds/Die
-  guid: 988ca1b8f4be5f4ba28d5ec6764adc02
-  Banks:
-  - {fileID: -2902673749671029313}
->>>>>>> GameStuff
+  - {fileID: 7066657908116940122}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -452,155 +23,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
-<<<<<<< HEAD
---- !u!114 &-701915861066854941
-=======
---- !u!114 &-3096682348469935678
->>>>>>> GameStuff
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/GameplayRepairer/Spark/Break
-  guid: 554c8ec6d3e03545bcdfd26c9ae610be
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -3291248795926403274}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
-=======
-  - {fileID: -3858135785004731976}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-<<<<<<< HEAD
-  - {fileID: -3123070361532455344}
-=======
-  - {fileID: 721072341373187334}
->>>>>>> develop
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1350
---- !u!114 &-506063851618890627
-=======
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Accel
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &-2902673749671029313
->>>>>>> GameStuff
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: D:\GGJ2020TidyGames\GGJ2020TidyGames\Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master
-    Bank.bank
-  lastModified: 637161778765471743
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 125536
-  Exists: 1
-<<<<<<< HEAD
---- !u!114 &-193489504212548766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Accel
-  Min: 0
-  Max: 1
-  Default: 0
->>>>>>> PlayerMovement
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-<<<<<<< HEAD
-  - {fileID: 9175828052678501112}
-  - {fileID: -3291248795926403274}
-  EditorEvents:
-  - {fileID: 5963493786295050278}
-  - {fileID: -5980441968648831786}
-  - {fileID: -9043876937411417161}
-  - {fileID: -701915861066854941}
-  - {fileID: 5847668902919390871}
-  - {fileID: -2629762834717335267}
-  - {fileID: 2818256387582635960}
-  - {fileID: -3400939133510540784}
-  - {fileID: 2836093561833720081}
-  - {fileID: 8288340146842668207}
-  - {fileID: -6160011174158415531}
-  MasterBankRef: {fileID: -3291248795926403274}
-  StringsBankRef: {fileID: 9175828052678501112}
-  stringsBankWriteTime: 637161812437296800
-=======
-  - {fileID: -506063851618890627}
-  - {fileID: -3858135785004731976}
-  EditorEvents:
-  - {fileID: 5206063292478893841}
-  - {fileID: 6357938667321177817}
-  - {fileID: -1105704390534058053}
-  - {fileID: -2198275874652265359}
-  - {fileID: 2867039773399007283}
-  - {fileID: 722376986898362064}
-  - {fileID: -5711634378394173967}
-  - {fileID: -5196847463908294355}
-  - {fileID: 4119425880048896372}
-  - {fileID: -782164998506020069}
-  - {fileID: 9050666409512772842}
-  MasterBankRef: {fileID: -3858135785004731976}
-  StringsBankRef: {fileID: -506063851618890627}
-<<<<<<< HEAD
-  stringsBankWriteTime: 637161778765481722
-=======
-  stringsBankWriteTime: 637161861772506142
->>>>>>> develop
-  cacheVersion: 2
---- !u!114 &2818256387582635960
-=======
---- !u!114 &-2893519710925237022
->>>>>>> GameStuff
+--- !u!114 &-7118109060801132228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -612,114 +35,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/GameplayTank/Tank/EngineHum
-  guid: 8343c46652e04c45844c5564528b44a7
-  Banks:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - {fileID: -3291248795926403274}
-=======
-  - {fileID: -3858135785004731976}
->>>>>>> PlayerMovement
-=======
-  - {fileID: -2902673749671029313}
->>>>>>> GameStuff
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
-<<<<<<< HEAD
---- !u!114 &2836093561833720081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/GameplayTank/Tank/Turning
-  guid: bbc347438f0ff74688657b35cf57b867
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -3291248795926403274}
-=======
-  - {fileID: -3858135785004731976}
->>>>>>> PlayerMovement
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &3385705487718437516
-=======
---- !u!114 &11400000
->>>>>>> GameStuff
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -8042756799668978376}
-  - {fileID: -2902673749671029313}
-  EditorEvents:
-  - {fileID: -6485028664264640244}
-  - {fileID: -8539703284930721154}
-  - {fileID: 8693705488566029301}
-  - {fileID: 7299989887512276973}
-  - {fileID: -6028953520448735131}
-  - {fileID: -2893519710925237022}
-  - {fileID: 903851770556654539}
-  - {fileID: -4140549105038677626}
-  - {fileID: -7613759987504703905}
-  - {fileID: -7984607777646010224}
-  - {fileID: -8019064268985534666}
-  MasterBankRef: {fileID: -2902673749671029313}
-  StringsBankRef: {fileID: -8042756799668978376}
-  stringsBankWriteTime: 637161778765481722
-  cacheVersion: 2
---- !u!114 &903851770556654539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
   Path: event:/GameplayTank/Environment/GameMusic
   guid: 736b9c45c379114686054f5e47d47d71
   Banks:
-<<<<<<< HEAD
-  - {fileID: -3291248795926403274}
-=======
-  - {fileID: -3858135785004731976}
->>>>>>> PlayerMovement
-=======
-  Path: event:/GameplayTank/Tank/EngineHum
-  guid: 8343c46652e04c45844c5564528b44a7
-  Banks:
-  - {fileID: -2902673749671029313}
->>>>>>> GameStuff
+  - {fileID: 7066657908116940122}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -727,129 +46,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &3615512390830583390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
-<<<<<<< HEAD
---- !u!114 &5206063292478893841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/GameplayTank/Gameplay Sounds/Win
-  guid: 0f1bcdfc9a9ffe40b1eaa84b7abc2ebe
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -3291248795926403274}
-=======
-  - {fileID: -3858135785004731976}
->>>>>>> PlayerMovement
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &8147442714286984950
-=======
---- !u!114 &5468679137280275291
->>>>>>> GameStuff
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
-<<<<<<< HEAD
---- !u!114 &8288340146842668207
-=======
---- !u!114 &7299989887512276973
->>>>>>> GameStuff
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/GameplayTank/Tank/Shoot
-  guid: c9bb256ac1977d4d9ca34a7e0691858a
-  Banks:
-<<<<<<< HEAD
-  - {fileID: -3291248795926403274}
-=======
-  - {fileID: -3858135785004731976}
->>>>>>> PlayerMovement
-=======
-  Path: event:/GameplayRepairer/Spark/Break
-  guid: 554c8ec6d3e03545bcdfd26c9ae610be
-  Banks:
-  - {fileID: -2902673749671029313}
->>>>>>> GameStuff
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 1350
---- !u!114 &8735560672386850858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Hit
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &9175828052678501112
-=======
-  Length: 0
---- !u!114 &8693705488566029301
->>>>>>> GameStuff
+--- !u!114 &-6837045097921980395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -861,8 +58,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-<<<<<<< HEAD
   Path: Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master Bank.strings.bank
   lastModified: 637161812437296800
   LoadResult: 0
@@ -870,26 +65,312 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1218
   Exists: 1
-=======
-  Path: event:/GameplayRepairer/Spark/SparkMovement
-  guid: df396a85da0ace4a9156c8467a9f6591
+--- !u!114 &-4985324356164473933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GameplayTank/Gameplay Sounds/Win
+  guid: 0f1bcdfc9a9ffe40b1eaa84b7abc2ebe
   Banks:
-  - {fileID: -3858135785004731976}
-=======
-  Path: event:/GameplayRepairer/Spark/Repair
-  guid: 4829f24c8d2f7345913f239b4aa63d82
-  Banks:
-  - {fileID: -2902673749671029313}
->>>>>>> GameStuff
+  - {fileID: 7066657908116940122}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-<<<<<<< HEAD
+  Length: 0
+--- !u!114 &-3466078209941671599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GameplayTank/Gameplay Sounds/Die
+  guid: 988ca1b8f4be5f4ba28d5ec6764adc02
+  Banks:
+  - {fileID: 7066657908116940122}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1926422907468147152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GameplayRepairer/Spark/SparkMovement
+  guid: df396a85da0ace4a9156c8467a9f6591
+  Banks:
+  - {fileID: 7066657908116940122}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 218799089546026804}
+  MinDistance: 0
+  MaxDistance: 0
   Length: 2300
->>>>>>> PlayerMovement
-=======
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -6837045097921980395}
+  - {fileID: 7066657908116940122}
+  EditorEvents:
+  - {fileID: -4985324356164473933}
+  - {fileID: 3738607416828127259}
+  - {fileID: 3169231109929310800}
+  - {fileID: 2077928028276419243}
+  - {fileID: -7118109060801132228}
+  - {fileID: -8109682437611834794}
+  - {fileID: 3553272971695981435}
+  - {fileID: -3466078209941671599}
+  - {fileID: 8911926285770904065}
+  - {fileID: 7252187077317970937}
+  - {fileID: -1926422907468147152}
+  MasterBankRef: {fileID: 7066657908116940122}
+  StringsBankRef: {fileID: -6837045097921980395}
+  stringsBankWriteTime: 637161812437296800
+  cacheVersion: 2
+--- !u!114 &218799089546026804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &1644702163303958142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Accel
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &2077928028276419243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GameplayRepairer/Spark/Break
+  guid: 554c8ec6d3e03545bcdfd26c9ae610be
+  Banks:
+  - {fileID: 7066657908116940122}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3048911770081563680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hit
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &3169231109929310800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GameplayRepairer/Spark/Repair
+  guid: 4829f24c8d2f7345913f239b4aa63d82
+  Banks:
+  - {fileID: 7066657908116940122}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
   Length: 400
->>>>>>> GameStuff
+--- !u!114 &3553272971695981435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GameplayTank/Tank/EngineHum
+  guid: 8343c46652e04c45844c5564528b44a7
+  Banks:
+  - {fileID: 7066657908116940122}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3738607416828127259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GameplayTank/Tank/Movement
+  guid: 461634ab1d90e248b410c2aaa2b327fb
+  Banks:
+  - {fileID: 7066657908116940122}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1644702163303958142}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 250
+--- !u!114 &7066657908116940122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GGJ2020TidyGames\GGJ2020TidyGames\Assets\Plugins\FMOD\FMOD Project\FMOD\Build\Desktop\Master
+    Bank.bank
+  lastModified: 637161812437296800
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 125536
+  Exists: 1
+--- !u!114 &7252187077317970937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GameplayTank/Tank/Shoot
+  guid: c9bb256ac1977d4d9ca34a7e0691858a
+  Banks:
+  - {fileID: 7066657908116940122}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3048911770081563680}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1350
+--- !u!114 &8911926285770904065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/GameplayTank/Tank/Turning
+  guid: bbc347438f0ff74688657b35cf57b867
+  Banks:
+  - {fileID: 7066657908116940122}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 345

@@ -76,7 +76,7 @@ MonoBehaviour:
   blueSpawner: {fileID: 0}
   redMissile: {fileID: 7502819649423233646, guid: b8056458f87dd0a409e594d133a4e830,
     type: 3}
-  blueMissile: {fileID: 7502819649423233646, guid: a9a0dab60d6537f4b8b382723a4fdd9a,
+  blueMissile: {fileID: 7502819649423233646, guid: 8887701ab750d9c458ec38d299797100,
     type: 3}
   maxMissiles: 6
   missileSpeed: 9
