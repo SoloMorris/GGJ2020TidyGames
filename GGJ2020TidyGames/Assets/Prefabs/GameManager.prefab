@@ -57,7 +57,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f616933824327946934b4536eecb5dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePuff: {fileID: 0}
   Maps:
   - {fileID: 6426041817755353537, guid: dd029f888bc5c4b48b5c64a025eb976c, type: 3}
   - {fileID: 7120556262816539653, guid: 1d94458ccc1a93f49b660f438d480038, type: 3}
@@ -71,7 +70,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 9067482081689776392, guid: 189ebe0df1bb0af4abf77f6fd69753c9, type: 3}
+  - {fileID: 9067482081689776392, guid: 796adc885694e4a44bb942863e83510f, type: 3}
   coin: {fileID: 8925830368027949965, guid: 745e4a70407206343a04df1956acbebb, type: 3}
+  scores: {x: 0, y: 0}
   units:
   - {fileID: 0}
   - {fileID: 0}
@@ -81,6 +83,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   state: 0
+  roundTimer: 0
+  timerDisplay: {fileID: 0}
 --- !u!114 &2897371123681194382
 MonoBehaviour:
   m_ObjectHideFlags: 0

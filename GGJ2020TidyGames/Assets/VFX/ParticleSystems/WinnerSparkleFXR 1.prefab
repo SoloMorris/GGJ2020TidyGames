@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 4478160154631748378}
   - component: {fileID: 8966630115444453089}
   - component: {fileID: 4441357391291337025}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: WinnerSparkleFXR 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4478160154631748378
 Transform:
   m_ObjectHideFlags: 0
