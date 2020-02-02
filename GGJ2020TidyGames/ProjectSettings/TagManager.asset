@@ -8,6 +8,8 @@ TagManager:
   - Obstacles
   - TankRed
   - TankBlue
+  - red
+  - blue
   layers:
   - Default
   - TransparentFX
