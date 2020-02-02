@@ -10,6 +10,7 @@ TagManager:
   - TankBlue
   - red
   - blue
+  - coin
   layers:
   - Default
   - TransparentFX
