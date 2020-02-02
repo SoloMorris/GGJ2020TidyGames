@@ -19,7 +19,7 @@ public class CoinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        VFXManager.instance.PlayParticleSystemFromVFXList(gameObject, "coinAmbient", " ");
+        VFXManager.instance.PlayParticleSystemFromVFXList(gameObject, "coinAmbient", "do");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,6 +29,7 @@ public class CoinScript : MonoBehaviour
             gm.scores.x += 1;
             gm.noCoin = true;
             VFXManager.instance.PlayParticleSystemFromVFXList(gameObject, "coinPickup", " ");
+            VFXManager.instance.StopParticleSystem("coinAmbient", gameObject);
             Destroy(this.gameObject);
         }
         else if (collision.gameObject.CompareTag("TankBlue"))
@@ -36,6 +37,7 @@ public class CoinScript : MonoBehaviour
             gm.scores.y += 1;
             gm.noCoin = true;
             VFXManager.instance.PlayParticleSystemFromVFXList(gameObject, "coinPickup", " ");
+            VFXManager.instance.StopParticleSystem("coinAmbient", gameObject);
             Destroy(this.gameObject);
         }
     }
