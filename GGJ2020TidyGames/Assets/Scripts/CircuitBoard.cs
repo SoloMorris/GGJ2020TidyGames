@@ -29,9 +29,6 @@ public class CircuitBoard : MonoBehaviour
 
     public Slider[] displays = new Slider[4];
 
-    [SerializeField] private ParticleSystem buttonDeath;
-    [SerializeField] private ParticleSystem buttonDeathAmbient;
-
     private GameManager gm;
 
     // Start is called before the first frame update
@@ -41,8 +38,6 @@ public class CircuitBoard : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             ResetBoard();
-            VFXManager.instance.AddParticleSystemToVFXList(buttonDeath, "killButton" + layer.ToString());
-            VFXManager.instance.AddParticleSystemToVFXList(buttonDeathAmbient, "deadButton" + layer.ToString());
         }
     }
 
@@ -93,14 +88,12 @@ public class CircuitBoard : MonoBehaviour
 
             if (buttonHealth[i] == 0)
             {
-                VFXManager.instance.PlayParticleSystemFromVFXList(displays[i].gameObject, "killButton" + layer.ToString(), "ye");
-                VFXManager.instance.PlayParticleSystemFromVFXList(displays[i].gameObject, "deadButton" + layer.ToString(), "ye");
+             
                 buttonAlive[i] = false;
             }
             else
             {
-                VFXManager.instance.StopParticleSystem("killButton" + layer.ToString(), displays[i].gameObject);
-                VFXManager.instance.StopParticleSystem("deadButton" + layer.ToString(), displays[i].gameObject);
+
                 buttonAlive[i] = true;
             }
         }
