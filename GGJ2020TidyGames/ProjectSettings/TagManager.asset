@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Circuit_Board
+  - Obstacles
+  - TankRed
+  - TankBlue
+  - red
+  - blue
+  - coin
   layers:
   - Default
   - TransparentFX
@@ -13,9 +20,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - CB1
+  - CB2
+  - TankGame
   - 
   - 
   - 
